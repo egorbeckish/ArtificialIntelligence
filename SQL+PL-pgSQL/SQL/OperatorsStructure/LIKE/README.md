@@ -51,7 +51,6 @@ WHERE
 --|James     |
 --|...       |
 --|Hazel     |
-
 ```
 
 Запрос 3. [Вывести имена сотрудников, которые состоят из четырёх символов, начинаются на букву J и заканчиваются буквой n](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/LIKE/sql/query3.sql)

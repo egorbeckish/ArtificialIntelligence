@@ -34,7 +34,6 @@ WHERE
 --|order_status                       |
 --|-----------------------------------|
 --|Order 66 from 2020-01-23 is Pending|
-
 ```
 
 Запрос 3. [Вывести значения столбца street_address в таблице Locations, которые содержат название города (city)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/CONCAT/sql/query3.sql)

@@ -1,0 +1,16 @@
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	salary,
+	department_id
+FROM
+	employees
+WHERE
+	salary > 15000;
+
+--|employee_id|first_name|last_name|salary|department_id|
+--|-----------|----------|---------|------|-------------|
+--|100        |Steven    |King     |24 000|90           |
+--|101        |Neena     |Kochhar  |17 000|90           |
+--|102        |Lex       |De Haan  |17 000|90           |

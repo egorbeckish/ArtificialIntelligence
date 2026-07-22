@@ -1,0 +1,112 @@
+Для того чтобы выводить только те данные, которые удовлетворяют определенным условиям, оператор **SELECT** должен содержать предложение **WHERE**, которое содержит условное выражение.
+
+Структура оператора представлена в следующем виде:
+```sql
+SELECT {список столбцов}
+FROM {таблица}
+WHERE {условное выражение};
+```
+---
+> Условное выражение для каждой строки таблицы может принимать значения: **ИСТИНА (TRUE)**, **ЛОЖЬ (FALSE)**, **НЕ ОПРЕДЕЛЕНО (UNKNOWN)**. Результат выполнения запроса будет содержать только те строки, для которых условное выражение будет иметь значение **ИСТИНА (TRUE)**.
+
+> В условных выражениях предложения WHERE могут быть использованы операторы сравнения =, <>, <, > и логические операторы **NOT**, **AND**, **OR**. Логические операторы используются для формирования сложных условий выбора и имеют разный приоритет. Сначала выполняются все операторы **NOT**, потом операторы **AND**; операторы **OR** выполняются в последнюю очередь. Для исключения возможных ошибок при формировании сложных запросов следует использовать скобки. Выражения внутри скобок выполняются первыми, слева направо.
+
+Запрос 1. [Вывод данных о сотрудниках, зарплата которых больше 15000](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query1.sql)
+```sql
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	salary,
+	department_id
+FROM
+	employees
+WHERE
+	salary > 15000;
+
+--|employee_id|first_name|last_name|salary|department_id|
+--|-----------|----------|---------|------|-------------|
+--|100        |Steven    |King     |24 000|90           |
+--|101        |Neena     |Kochhar  |17 000|90           |
+--|102        |Lex       |De Haan  |17 000|90           |
+```
+
+Запрос 2. [Вывод данных о сотрудниках, принятых на работу 20.08.1997](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query2.sql)
+```sql
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	salary,
+	department_id
+FROM
+	employees
+WHERE
+	hire_date = '20.08.1997';
+
+--|employee_id|first_name|last_name|salary|department_id|
+--|-----------|----------|---------|------|-------------|
+--|129        |Laura     |Bissot   |3 300 |50           |
+--|152        |Peter     |Hall     |      |80           |
+```
+
+Запрос 3. [Вывод данных о сотрудниках, которые работают в отделе 50 и занимают должность ST_MAN](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query3.sql)
+```sql
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	department_id,
+	job_id
+FROM
+	employees
+WHERE
+	(department_id = 50)
+	AND (job_id = 'ST_MAN');
+
+--|employee_id|first_name|last_name|department_id|job_id|
+--|-----------|----------|---------|-------------|------|
+--|120        |Matthew   |Weiss    |50           |ST_MAN|
+--|121        |Adam      |Fripp    |50           |ST_MAN|
+--|122        |Payam     |Kaufling |50           |ST_MAN|
+--|123        |Shanta    |Vollman  |50           |ST_MAN|
+--|124        |Kevin     |Mourgos  |50           |ST_MAN|
+```
+
+Запрос 4. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018 или 02.11.2019](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query4.sql)
+```sql
+SELECT
+	*
+FROM
+	orders
+WHERE
+	(salesman_id = 155)
+	AND (order_date = '15.03.2018'
+		OR order_date = '02.11.2019');
+
+--|order_id|customer_id|status |salesman_id|order_date|
+--|--------|-----------|-------|-----------|----------|
+--|101     |3          |Pending|155        |2018-03-15|
+--|49      |61         |Shipped|155        |2019-11-02|
+--|50      |62         |Pending|155        |2019-11-02|
+```
+
+Запрос 5. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018, и обо всех договорах, заключенных 02.11.2019](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query5.sql)
+```sql
+SELECT
+	*
+FROM
+	orders
+WHERE
+	(salesman_id = 155)
+	AND (order_date = '15.03.2018')
+	OR (order_date = '02.11.2019');
+
+--|order_id|customer_id|status |salesman_id|order_date|
+--|--------|-----------|-------|-----------|----------|
+--|101     |3          |Pending|155        |2018-03-15|
+--|49      |61         |Shipped|155        |2019-11-02|
+--|50      |62         |Pending|155        |2019-11-02|
+--|52      |64         |Shipped|160        |2019-11-02|
+--|51      |63         |Shipped|           |2019-11-02|
+```

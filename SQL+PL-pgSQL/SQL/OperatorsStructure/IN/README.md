@@ -6,7 +6,7 @@ FROM {список таблица}
 WHERE {имя столбца} IN {список значений};
 ```
 
-Запрос 1. [Вывести данные о сотрудниках, которые работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query1.sql)
+Запрос 1. [Вывести данные о сотрудниках, которые работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query1.sql)
 ```sql
 SELECT
 	employee_id,
@@ -26,7 +26,7 @@ WHERE
 --|206        |William   |Gietz    |110          |
 ```
 
-Запрос 2. [Вывести данные о договорах, заключённых в определённые даты](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query2.sql)
+Запрос 2. [Вывести данные о договорах, заключённых в определённые даты](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query2.sql)
 ```sql
 SELECT
 	*
@@ -43,7 +43,7 @@ WHERE
 --|96      |46         |Shipped|179        |2019-09-14|
 ```
 
-Запрос 3. [Вывести данные о сотрудниках, которые не работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query3.sql)
+Запрос 3. [Вывести данные о сотрудниках, которые не работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,
@@ -66,7 +66,7 @@ WHERE
 --|206        |William   |Gietz    |110          |
 ```
 
-Запрос 4. [Вывести названия городов, которые расположены в США (country_id = 'US') или Канаде (country_id = 'CA') и имеют почтовый индекс, заканчивающийся цифрой 2](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query4.sql)
+Запрос 4. [Вывести названия городов, которые расположены в США (country_id = 'US') или Канаде (country_id = 'CA') и имеют почтовый индекс, заканчивающийся цифрой 2](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query4.sql)
 ```sql
 SELECT
 	city
@@ -82,7 +82,7 @@ WHERE
 --|Whitehorse|
 ```
 
-Запрос 5. [Вывести данные о сотрудниках, которые работают в отделах с определёнными номерами, и о сотрудниках, у которых не задан номер отдела (содержит ошибку)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query5.sql)
+Запрос 5. [Вывести данные о сотрудниках, которые работают в отделах с определёнными номерами, и о сотрудниках, у которых не задан номер отдела (содержит ошибку)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query5.sql)
 
 ---
 > Если список значений в **IN** будет содержать **NULL**, то результат выполнения оператора не будет содержать строк, у которых проверяемый столбец имеет значение **NULL**, так как результат сравнения с **NULL** имеет значение **НЕ ОПРЕДЕЛЕНО** (**UNKNOWN**).
@@ -105,7 +105,7 @@ WHERE
 --|206        |William   |Gietz    |110          |
 ```
 
-Запрос 6. [Вывести данные о сотрудниках, которые не работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/query6.sql)
+Запрос 6. [Вывести данные о сотрудниках, которые не работают в отделах с определёнными номерами](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN/sql/query6.sql)
 ```sql
 SELECT
 	employee_id,

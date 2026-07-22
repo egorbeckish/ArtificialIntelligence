@@ -11,7 +11,7 @@ WHERE {условное выражение};
 
 > В условных выражениях предложения WHERE могут быть использованы операторы сравнения =, <>, <, > и логические операторы **NOT**, **AND**, **OR**. Логические операторы используются для формирования сложных условий выбора и имеют разный приоритет. Сначала выполняются все операторы **NOT**, потом операторы **AND**; операторы **OR** выполняются в последнюю очередь. Для исключения возможных ошибок при формировании сложных запросов следует использовать скобки. Выражения внутри скобок выполняются первыми, слева направо.
 
-Запрос 1. [Вывод данных о сотрудниках, зарплата которых больше 15000](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query1.sql)
+Запрос 1. [Вывод данных о сотрудниках, зарплата которых больше 15000](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE/sql/query1.sql)
 ```sql
 SELECT
 	employee_id,
@@ -31,7 +31,7 @@ WHERE
 --|102        |Lex       |De Haan  |17 000|90           |
 ```
 
-Запрос 2. [Вывод данных о сотрудниках, принятых на работу 20.08.1997](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query2.sql)
+Запрос 2. [Вывод данных о сотрудниках, принятых на работу 20.08.1997](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE/sql/query2.sql)
 ```sql
 SELECT
 	employee_id,
@@ -50,7 +50,7 @@ WHERE
 --|152        |Peter     |Hall     |      |80           |
 ```
 
-Запрос 3. [Вывод данных о сотрудниках, которые работают в отделе 50 и занимают должность ST_MAN](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query3.sql)
+Запрос 3. [Вывод данных о сотрудниках, которые работают в отделе 50 и занимают должность ST_MAN](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,
@@ -73,7 +73,7 @@ WHERE
 --|124        |Kevin     |Mourgos  |50           |ST_MAN|
 ```
 
-Запрос 4. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018 или 02.11.2019](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query4.sql)
+Запрос 4. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018 или 02.11.2019](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE/sql/query4.sql)
 ```sql
 SELECT
 	*
@@ -91,7 +91,7 @@ WHERE
 --|50      |62         |Pending|155        |2019-11-02|
 ```
 
-Запрос 5. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018, и обо всех договорах, заключенных 02.11.2019](https://github.com/egorbeckish/TestRepository/blob/main/WHERE/sql/query5.sql)
+Запрос 5. [Вывод данных о договорах сотрудника 155, заключенных 15.03.2018, и обо всех договорах, заключенных 02.11.2019](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE/sql/query5.sql)
 ```sql
 SELECT
 	*

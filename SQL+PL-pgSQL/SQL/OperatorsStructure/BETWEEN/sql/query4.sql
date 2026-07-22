@@ -1,12 +1,17 @@
 SELECT
-	c_name,
-	address
+	employee_id,
+	first_name,
+	last_name,
+	department_id
 FROM
-	customers
+	employees
 WHERE
-	address LIKE '%/_%' ESCAPE '/';
+	department_id = 50
+	AND first_name BETWEEN 'A' AND 'B';
 
---|c_name             |address                                         |
---|-------------------|------------------------------------------------|
---|Boeing             |100 North Riverside Chicago, Illinois 60_606 USA|
---|United Technologies|10 Farm Springs Rd. Farmington, CT 060_32 USA   |
+--|employee_id|first_name|last_name|department_id|
+--|-----------|----------|---------|-------------|
+--|121        |Adam      |Fripp    |50           |
+--|185        |Alexis    |Bull     |50           |
+--|187        |Anthony   |Cabrio   |50           |
+--|196        |Alana     |Walsh    |50           |

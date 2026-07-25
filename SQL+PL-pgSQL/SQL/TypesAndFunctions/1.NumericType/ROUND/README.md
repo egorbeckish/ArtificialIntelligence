@@ -1,6 +1,6 @@
 ## ROUND
 
-ROUND(x,n) - Выполняет округление числа x до ближайшего числа с заданной точностью n.
+**ROUND(x,n)** - Выполняет округление числа x до ближайшего числа с заданной точностью n.
 
 Запрос 1. [Пример использования функции ROUND](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/ROUND/sql/query1.sql)
 ```sql

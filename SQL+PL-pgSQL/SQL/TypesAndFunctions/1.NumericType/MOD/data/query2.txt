@@ -1,0 +1,6 @@
+|employee_id|first_name|last_name|department_id|rating_e|
+|-----------|----------|---------|-------------|--------|
+|103        |Alexander |Hunold   |60           |3       |
+|104        |Bruce     |Ernst    |60           |3       |
+|107        |Diana     |Lorentz  |60           |3       |
+|105        |DAVID     |Austin   |60           |5       |

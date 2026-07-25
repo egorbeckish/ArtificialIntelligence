@@ -13,3 +13,5 @@ PostgreSQL имеет широкий набор встроенных типов 
 ### [3. Типы даты и времени](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType)
 
 ### [4. Логический тип](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType)
+
+### [5. Функции преобразования типов данных](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions)

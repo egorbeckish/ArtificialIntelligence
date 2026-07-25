@@ -1,6 +1,6 @@
 ## EXP
 
-**EXP(x)** - Возвращает значение экспоненты (результат возведения e=2,718281 в степень n).
+**EXP(x)** - Возвращает значение экспоненты (результат возведения *e*=2,718281 в степень *n*).
 
 Запрос 1. [Пример использования функции EXP](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/EXP/sql/query1.sql)
 ```sql

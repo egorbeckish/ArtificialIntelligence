@@ -5,7 +5,7 @@
 Запрос 1. [Пример использования функции UPPER](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/UPPER/sql/query1.sql)
 ```sql
 SELECT
-	UPPER(Product_name)
+	UPPER(product_name)
 FROM
 	products
 WHERE

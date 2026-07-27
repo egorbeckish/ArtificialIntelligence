@@ -1,6 +1,6 @@
 ## UPPER
 
-**UPPER(str)** - Осуществляет преобразование строки *str* в верхний.
+**UPPER(str)** - Осуществляет преобразование строки *str* в верхний регистр.
 
 Запрос 1. [Пример использования функции UPPER](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/UPPER/sql/query1.sql)
 ```sql

@@ -1,0 +1,15 @@
+SELECT
+	first_name || ' ' || last_name || ' has a monthly salary of ' || salary || ' dollars.' AS Pay
+FROM
+	employees
+WHERE
+	salary > 12000;
+
+--|pay                                                        |
+--|-----------------------------------------------------------|
+--|Steven King has a monthly salary of 24000.00 dollars.      |
+--|Neena Kochhar has a monthly salary of 17000.00 dollars.    |
+--|Lex De Haan has a monthly salary of 17000.00 dollars.      |
+--|John Russell has a monthly salary of 14000.00 dollars.     |
+--|Karen Partners has a monthly salary of 13500.00 dollars.   |
+--|Michael Hartstein has a monthly salary of 13000.00 dollars.|

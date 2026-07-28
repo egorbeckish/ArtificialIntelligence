@@ -1,6 +1,6 @@
 ## 3. Типы даты и времени
 
-PostgreSQL поддерживает все типы данных для представления даты и времени, предусмотренные стандартом SQL. Характеристики этих типов приведены в табл. 1 Даты отображаются в соответствии с григорианским календарем, даже за годы до того, как этот календарь был введен.
+PostgreSQL поддерживает все типы данных для представления даты и времени, предусмотренные стандартом SQL. Характеристики этих типов приведены в табл. 1. Даты отображаются в соответствии с григорианским календарем, даже за годы до того, как этот календарь был введен.
 
 При вводе значения этих типов заключаются в кавычки и формально представляют собой строковые значения. В процессе выполнения операторов SQL эти значения приводятся к формату даты и времени. Это может осуществляться неявным образом или с использованием функций преобразования формата. Использование функций преобразования формата является более предпочтительным вариантом, позволяющим избежать многих ошибок и недоразумений.
 
@@ -8,13 +8,13 @@ PostgreSQL поддерживает все типы данных для пред
 
 | Имя | Размер | Описание | Диапазон значений |
 |-----|--------|----------|-------------------|
-| DATE | 4 байта | Дата без указания времени | От 4713 до н.э. до 5874897 н.э. |
-| TIME [ (p) ] | 8 байт | Время суток без указания часового пояса, с точностью p после точки в секундах | От 00:00:00.000000 до 24:00:00.000000 |
-| TIME [ (p) ] WITH TIME ZONE | 8 байт | Время суток с указанием часового пояса, с точностью p после точки в секундах | От 00:00:00.000000 +1559 до 24:00:00.000000 -1559 |
-| TIMESTAMP [ (p) ] | 8 байт | Дата и время суток без указания часового пояса, с точностью p после точки в секундах | От 4713 до н.э. до 294276 н.э. |
-| TIMESTAMP [ (p) ] WITH TIME ZONE | 8 байт | Дата и время суток с указанием часового пояса, с точностью p после точки в секундах | От 4713 до н.э. до 294276 н.э. |
-| TSTZRANGE | 16 байт | Диапазон дат с подтипом timestamp with time zone | От 4713 до н.э. до 294276 н.э. |
-| INTERVAL [FIELDS] [(p)] | 16 байт | Временной интервал | От -1780000000 лет до +1780000000 лет |
+| [DATE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE) | 4 байта | Дата без указания времени | От 4713 до н.э. до 5874897 н.э. |
+| [TIME [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME) | 8 байт | Время суток без указания часового пояса, с точностью p после точки в секундах | От 00:00:00.000000 до 24:00:00.000000 |
+| [TIME [ (p) ] WITH TIME ZONE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME) | 8 байт | Время суток с указанием часового пояса, с точностью p после точки в секундах | От 00:00:00.000000 +1559 до 24:00:00.000000 -1559 |
+| [TIMESTAMP [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток без указания часового пояса, с точностью p после точки в секундах | От 4713 до н.э. до 294276 н.э. |
+| [TIMESTAMP [ (p) ] WITH TIME ZONE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток с указанием часового пояса, с точностью p после точки в секундах | От 4713 до н.э. до 294276 н.э. |
+| [TSTZRANGE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TSTZRANGE) | 16 байт | Диапазон дат с подтипом timestamp with time zone | От 4713 до н.э. до 294276 н.э. |
+| [INTERVAL [FIELDS] [(p)]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/INTERVAL) | 16 байт | Временной интервал | От -1780000000 лет до +1780000000 лет |
 
 Для работы с данными, имеющими тип даты и времени, можно использовать большое количество встроенных функций. В таблице 2 приведены основные функции, которые можно использовать при работе с данными этих типов.
 
@@ -22,15 +22,15 @@ PostgreSQL поддерживает все типы данных для пред
 
 | Функция | Описание и пример |
 |---------|------------------|
-| AGE(X,Y) | Возвращает разницу между датами (X-Y) в виде интервала в годах, месяцах, днях, часах и т.д.<br>AGE('2023-03-08', '2011-06-14') → 11 years 8 mons 24 days |
-| AGE([timestamp] X) | Возвращает разницу между текущей датой и датой X в виде интервала в годах, месяцах, днях, часах и т.д.<br>AGE(timestamp '2023-03-08') →1 mon 17 days |
-| CURRENT_DATE | Возвращает текущую дату<br>CURRENT_DATE → 25-04-2023 |
-| CURRENT_TIME | Возвращает текущее время суток с указанием часового пояса<br>CURRENT_TIME → 13:43:14 +0300 |
-| CURRENT_TIMESTAMP | Возвращает текущую дату и время с указанием часового пояса<br>CURRENT_TIMESTAMP → 25-04-2023 13:49:30.057 +0300 |
-| NOW() | Возвращает текущую дату и время с указанием часового пояса<br>NOW() → 26-04-2023 14:03:04.695 +0300 |
-| DATE_TRUNC(M,X) | Обрезает значение X до заданной точности M (second; minute; hour; day; dow; month; year)<br>SELECT CURRENT_DATE, DATE_TRUNC('MONTH', CURRENT_DATE) → 25-04-2023\|01-04-2023 00:00:00.000 +0300 |
-| EXTRACT(M FROM X) | Извлекает заданную часть M(second; minute; hour; day; dow; month; year) из значения X<br>SELECT CURRENT_DATE, EXTRACT('MONTH' FROM CURRENT_DATE) → 25-04-2023\| 4\| |
-| JUSTIFY_INTERVAL(INTERVAL) | Преобразует значение INTERVAL в корректный формат даты и времени TIMESTAMP<br>SELECT JUSTIFY_INTERVAL(INTERVAL '5000 hour 15 minute') → 6 mons 28 days 08:15:00 |
+| [AGE(X,Y)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/AGE) | Возвращает разницу между датами (X-Y) в виде интервала в годах, месяцах, днях, часах и т.д.<br>AGE('2023-03-08', '2011-06-14') → 11 years 8 mons 24 days |
+| [AGE([timestamp] X)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/AGE) | Возвращает разницу между текущей датой и датой X в виде интервала в годах, месяцах, днях, часах и т.д.<br>AGE(timestamp '2023-03-08') →1 mon 17 days |
+| [CURRENT_DATE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/CURRENT_DATE) | Возвращает текущую дату<br>CURRENT_DATE → 25-04-2023 |
+| [CURRENT_TIME](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/CURRENT_TIME) | Возвращает текущее время суток с указанием часового пояса<br>CURRENT_TIME → 13:43:14 +0300 |
+| [CURRENT_TIMESTAMP](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/CURRENT_TIMESTAMP) | Возвращает текущую дату и время с указанием часового пояса<br>CURRENT_TIMESTAMP → 25-04-2023 13:49:30.057 +0300 |
+| [NOW()](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/NOW) | Возвращает текущую дату и время с указанием часового пояса<br>NOW() → 26-04-2023 14:03:04.695 +0300 |
+| [DATE_TRUNC(M,X)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE_TRUNC) | Обрезает значение X до заданной точности M (second; minute; hour; day; dow; month; year)<br>SELECT CURRENT_DATE, DATE_TRUNC('MONTH', CURRENT_DATE) → 25-04-2023\|01-04-2023 00:00:00.000 +0300 |
+| [EXTRACT(M FROM X)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT) | Извлекает заданную часть M(second; minute; hour; day; dow; month; year) из значения X<br>SELECT CURRENT_DATE, EXTRACT('MONTH' FROM CURRENT_DATE) → 25-04-2023\| 4\| |
+| [JUSTIFY_INTERVAL(INTERVAL)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/JUSTIFY_INTERVAL) | Преобразует значение INTERVAL в корректный формат даты и времени TIMESTAMP<br>SELECT JUSTIFY_INTERVAL(INTERVAL '5000 hour 15 minute') → 6 mons 28 days 08:15:00 |
 
 Стандарт ISO 8601 рекомендует использовать для вывода данных типа **DATE** формат *‘yyyy-mm-dd’* (год-месяц-день), но PostgreSQL позволяет использовать и другие форматы. При настройке соединения postgres был установлен формат *‘dd-mm-yyyy’* (день-месяц-год).
 

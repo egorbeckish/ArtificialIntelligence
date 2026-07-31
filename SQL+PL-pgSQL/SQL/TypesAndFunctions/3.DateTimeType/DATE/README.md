@@ -11,8 +11,8 @@
 Запрос 1. [Пример использования функции DATE](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE/sql/query1.sql)
 ```sql
 SELECT
-	'28.07.2026'::DATE;
-
+	DATE '28.07.2026'; -- '28.07.2026'::DATE
+	
 --|date      |
 --|----------|
 --|2026-07-28|

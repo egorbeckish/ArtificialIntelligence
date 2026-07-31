@@ -4,7 +4,7 @@
 
 **TIMESTAMP [ (p) ] WITH TIME ZONE (TIMESTAMPTZ [ (p) ])** - Дата и время суток с указанием часового пояса, с точностью *p* после точки в секундах.
 
-> При указанию **WITH TIME ZONE** будет использоваться локальный часовой пояс.
+> При указанию **WITH TIME ZONE** будет использоваться локальный часовой пояс. Это можно заметись в запросах 2 и 4.
 
 Запрос 1. [Пример использования функции TIMESTAMP без учета точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query1.sql)
 ```sql
@@ -19,7 +19,7 @@ SELECT
 Запрос 2. [Пример использования функции TIMESTAMP WITH TIME ZONE без учета точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query2.sql)
 ```sql
 SELECT
-	TIMESTAMP WITH TIME ZONE '01.01.1970 12:30:45.123456'; -- '01.01.1970 12:30:45.123456'::TIMESTAMP WITH TIME ZONE
+	TIMESTAMP WITH TIME ZONE '01.01.1970 12:30:45.123456+03:00'; -- '01.01.1970 12:30:45.123456+03:00'::TIMESTAMP WITH TIME ZONE
 
 --|timestamptz                     |
 --|--------------------------------|
@@ -41,9 +41,9 @@ SELECT
 Запрос 4. [Пример использования функции TIMESTAMP WITH TIME ZONE  с учетом точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query4.sql)
 ```sql
 SELECT
-	TIMESTAMP(4) WITH TIME ZONE '01.01.1970 12:30:45.523456', -- '01.01.1970 12:30:45.523456'::TIMESTAMP(4) WITH TIME ZONE
-	TIMESTAMP(0) WITH TIME ZONE '01.01.1970 12:30:45.523456', -- '01.01.1970 12:30:45.523456'::TIMESTAMP(0) WITH TIME ZONE
-	TIMESTAMP(0) WITH TIME ZONE '01.01.1970 12:30:45.423456'; -- '01.01.1970 12:30:45.523456'::TIMESTAMP(0) WITH TIME ZONE
+	TIMESTAMP(4) WITH TIME ZONE '01.01.1970 12:30:45.523456+03:00', -- '01.01.1970 12:30:45.523456+03:00'::TIMESTAMP(4) WITH TIME ZONE
+	TIMESTAMP(0) WITH TIME ZONE '01.01.1970 12:30:45.523456+03:00', -- '01.01.1970 12:30:45.523456+03:00'::TIMESTAMP(0) WITH TIME ZONE
+	TIMESTAMP(0) WITH TIME ZONE '01.01.1970 12:30:45.423456+03:00'; -- '01.01.1970 12:30:45.523456+03:00'::TIMESTAMP(0) WITH TIME ZONE
 
 --|timestamptz                     |timestamptz                     |timestamptz                     |
 --|--------------------------------|--------------------------------|--------------------------------|

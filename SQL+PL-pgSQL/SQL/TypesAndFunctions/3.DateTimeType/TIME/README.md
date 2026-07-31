@@ -7,7 +7,7 @@
 Запрос 1. [Пример использования функции TIME без учета точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query1.sql)
 ```sql
 SELECT
-	TIME '12:30:45.123456';
+	TIME '12:30:45.123456'; -- '12:30:45.123456'::TIME;
 
 --|time           |
 --|---------------|
@@ -17,7 +17,7 @@ SELECT
 Запрос 2. [Пример использования функции TIME WITH TIME ZONE без учета точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query2.sql)
 ```sql
 SELECT
-	TIME WITH TIME ZONE '12:30:45.123456+03:00';
+	TIME WITH TIME ZONE '12:30:45.123456+03:00'; -- '12:30:45.123456+03:00'::TIME WITH TIME ZONE
 
 --|timetz               |
 --|---------------------|
@@ -27,9 +27,9 @@ SELECT
 Запрос 3. [Пример использования функции TIME с учетом точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query3.sql)
 ```sql
 SELECT
-	TIME(2) '12:30:45.523456',
-	TIME(0) '12:30:45.523456',
-	TIME(0) '12:30:45.423456';
+	TIME(2) '12:30:45.523456', -- '12:30:45.523456'::TIME(2)
+	TIME(0) '12:30:45.523456', -- '12:30:45.523456'::TIME(0)
+	TIME(0) '12:30:45.423456'; -- '12:30:45.523456'::TIME(0)
 
 --|time           |time           |time           |
 --|---------------|---------------|---------------|
@@ -39,9 +39,9 @@ SELECT
 Запрос 4. [Пример использования функции TIME WITH TIME ZONE  с учетом точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query4.sql)
 ```sql
 SELECT
-	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00',
-	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00',
-	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00';
+	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(4) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00'; -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
 
 --|timetz               |timetz               |timetz               |
 --|---------------------|---------------------|---------------------|

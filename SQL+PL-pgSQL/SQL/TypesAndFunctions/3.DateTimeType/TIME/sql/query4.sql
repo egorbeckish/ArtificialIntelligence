@@ -1,7 +1,7 @@
 SELECT
-	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00',
-	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00',
-	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00';
+	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(4) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00'; -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
 
 --|timetz               |timetz               |timetz               |
 --|---------------------|---------------------|---------------------|

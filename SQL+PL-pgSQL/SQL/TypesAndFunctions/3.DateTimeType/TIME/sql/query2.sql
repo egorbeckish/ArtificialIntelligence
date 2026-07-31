@@ -1,5 +1,5 @@
 SELECT
-	TIME WITH TIME ZONE '12:30:45.123456+03:00';
+	TIME WITH TIME ZONE '12:30:45.123456+03:00'; -- '12:30:45.123456+03:00'::TIME WITH TIME ZONE
 
 --|timetz               |
 --|---------------------|

@@ -7,7 +7,7 @@
 Запрос 1. [Вывести значение даты, заданной в виде интервала](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/INTERVAL/sql/query1.sql)
 ```sql
 SELECT
-	INTERVAL '10 day 4 month 2 year' AS new_date;
+	INTERVAL '10 day 4 month 2 year' AS new_date; -- '10 day 4 month 2 year'::INTERVAL
 
 --|new_date              |
 --|----------------------|
@@ -18,7 +18,7 @@ SELECT
 Запрос 2. [Вычесть из текущей даты значение, заданное в виде интервала](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/INTERVAL/sql/query2.sql)
 ```sql
 SELECT
-	(CURRENT_DATE - INTERVAL '10 day 4 month 2 year') AS new_date;
+	(CURRENT_DATE - INTERVAL '10 day 4 month 2 year') AS new_date; -- CURRENT_DATE - '10 day 4 month 2 year'::INTERVAL
 
 --|new_date                  |
 --|--------------------------|
@@ -28,7 +28,7 @@ SELECT
 Запрос 3. [Вывод времени, увеличенного на 1 час и 10 минут](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/INTERVAL/sql/query3.sql)
 ```sql
 SELECT
-	CURRENT_TIME + INTERVAL '1 hour 10 minute' AS new_time;
+	CURRENT_TIME + INTERVAL '1 hour 10 minute' AS new_time; -- CURRENT_TIME + '1 hour 10 minute'::INTERVAL
 
 --|new_time             |
 --|---------------------|
@@ -38,7 +38,7 @@ SELECT
 Запрос 4. [Умножить значение времени, заданное в виде интервала](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/INTERVAL/sql/query4.sql)
 ```sql
 SELECT
-	10 * INTERVAL '5 hour 15 minute' AS new_time;
+	10 * INTERVAL '5 hour 15 minute' AS new_time; -- 10 * '5 hour 15 minute'INTERVAL
 
 --|new_time|
 --|--------|

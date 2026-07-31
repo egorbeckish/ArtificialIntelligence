@@ -1,6 +1,6 @@
 SELECT
-	10 * INTERVAL '5 hour 15 minute' AS new_time;
+	CURRENT_TIME + INTERVAL '1 hour 10 minute' AS new_time;
 
---|new_time|
---|--------|
---|52:30:00|
+--|new_time             |
+--|---------------------|
+--|22:12:28.594760 +0700|

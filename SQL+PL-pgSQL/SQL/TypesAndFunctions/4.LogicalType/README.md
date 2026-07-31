@@ -6,7 +6,7 @@
 
 **Таблица 1. Таблица истинности логической функции AND с учетом значений NULL**
 
-| **AND**   | TRUE  | FALSE | NULL  |
+| AND   | TRUE  | FALSE | NULL  |
 |-------|-------|-------|-------|
 | TRUE  | TRUE  | FALSE | NULL  |
 | FALSE | FALSE | FALSE | **FALSE** |
@@ -14,7 +14,7 @@
 
 **Таблица 2. Таблица истинности логической функции OR с учетом значений NULL**
 
-| **OR**    | TRUE  | FALSE | NULL  |
+| OR    | TRUE  | FALSE | NULL  |
 |-------|-------|-------|-------|
 | TRUE  | TRUE  | TRUE  | **TRUE**  |
 | FALSE | TRUE  | FALSE | NULL  |

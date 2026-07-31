@@ -17,3 +17,13 @@ SELECT
 --|----------|
 --|2026-07-28|
 ```
+
+Запрос 2. [Вывод заданного значения даты, увеличенного на 45 дней](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE/sql/query2.sql)
+```sql
+SELECT
+	DATE '28.07.2026' + 45 AS add_45; -- '28.07.2026'::DATE + 45 AS add_45
+
+--|add_45    |
+--|----------|
+--|2026-09-11|
+```

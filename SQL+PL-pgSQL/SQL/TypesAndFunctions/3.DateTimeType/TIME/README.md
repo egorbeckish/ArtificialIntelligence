@@ -39,9 +39,9 @@ SELECT
 Запрос 4. [Пример использования функции TIME WITH TIME ZONE  с учетом точности](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TIME/sql/query4.sql)
 ```sql
 SELECT
-	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(4) WITH TIME ZONE
-	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
-	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00'; -- '12:30:45.523456'::TIME(0) WITH TIME ZONE
+	TIME(4) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456+0300'::TIME(4) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.523456+03:00', -- '12:30:45.523456+0300'::TIME(0) WITH TIME ZONE
+	TIME(0) WITH TIME ZONE '12:30:45.423456+03:00'; -- '12:30:45.523456+0300'::TIME(0) WITH TIME ZONE
 
 --|timetz               |timetz               |timetz               |
 --|---------------------|---------------------|---------------------|

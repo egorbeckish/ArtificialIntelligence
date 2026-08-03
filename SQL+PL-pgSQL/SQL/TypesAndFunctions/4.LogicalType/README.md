@@ -46,14 +46,9 @@ WHERE
 --|...        |...       |...      |...       |...     |
 --|206        |William   |Gietz    |07-06-1994|false   |
 ```
-
-
 Значения **UNKNOWN (NULL)** выводятся в виде пустой строки. В запросе 2 содержится выражение *commission_pct > 0.2*. Если столбец *commission_pct* будет иметь значение **NULL**, то результат этого выражения будет **UNKNOWN (NULL)**.
 
----
-
 Запрос 2. [Вывести данные о сотрудниках, которые работают в отделах 50, 60 и получают зарплату более 8000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType/sql/query2.sql)
-
 ```sql
 SELECT
 	employee_id,

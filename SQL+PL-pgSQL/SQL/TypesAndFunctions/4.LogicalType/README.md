@@ -19,8 +19,6 @@
 | TRUE  | TRUE  | TRUE  | **TRUE**  |
 | FALSE | TRUE  | FALSE | NULL  |
 | NULL  | TRUE  | NULL  | NULL  |
-
----
 > В предложении SELECT могут присутствовать выражения, которые имеют логический тип.
 
 В предложении *SELECT* могут присутствовать выражения, которые имеют логический тип. Рассмотрим небольшую модификацию [запроса 5](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT), в который добавлен вычисляемый столбец *salary>10000*. Значение этого столбца будет иметь значение **true**, если значение зарплаты сотрудника будет больше 1000, и значение **false** в противном случае.

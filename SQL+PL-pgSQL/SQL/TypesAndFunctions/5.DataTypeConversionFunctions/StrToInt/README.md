@@ -19,10 +19,10 @@
 | 0 | Цифра с ведущим нулём |
 | . | Десятичная точка |
 | , | Разделитель тысяч |
-| D | Десятичный разделитель (зависит от локали) |
+| D | Десятичный разделитель (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr)) |
 | G | Разделитель групп (тысяч) |
 | $ | Знак доллара |
-| L | Символ валюты (зависит от локали) |
+| L | Символ валюты (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr)) |
 | MI | Минус справа (отрицательное число) |
 | S | Знак плюс/минус |
 
@@ -36,13 +36,16 @@ SELECT
 	TO_NUMBER('1,234,567.89', '9,999,999.99'),
 	TO_NUMBER('00123', '99999'),
 	TO_NUMBER('00123', '00000'),
+	TO_NUMBER('123,45', '999D99'),
+	TO_NUMBER('1 234 567,89', '9G999G999D99'),
 	TO_NUMBER('$1,234.56', '$9,999.99'),
+	TO_NUMBER('₽1234.56', 'L9999.99'),
 	TO_NUMBER('-123.45', 'S999.99'),
 	TO_NUMBER('123.45-', '999.99S');
 
---|to_number|to_number|to_number   |to_number|to_number|to_number|to_number|to_number|
---|---------|---------|------------|---------|---------|---------|---------|---------|
---|12 345   |123,45   |1 234 567,89|123      |123      |1 234,56 |-123,45  |-123,45  |
+--|to_number|to_number|to_number   |to_number|to_number|to_number|to_number   |to_number|to_number|to_number|to_number|
+--|---------|---------|------------|---------|---------|---------|------------|---------|---------|---------|---------|
+--|12 345   |123,45   |1 234 567,89|123      |123      |123,45   |1 234 567,89|1 234,56 |1 234,56 |-123,45  |-123,45  |
 ```
 
 Запрос 2. [Если число символов в дробной части символьного представления будет больше числа элементов формата, то осуществляется усечение без округления.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToInt/sql/query2.sql)

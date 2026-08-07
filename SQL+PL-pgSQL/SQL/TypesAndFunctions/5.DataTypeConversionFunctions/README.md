@@ -11,4 +11,4 @@
 
 ### [4. Преобразование строки символов к типам даты и времени](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToDateTime)
 
-### 5. [Преобразование значений NULL](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL)
+### [5. Преобразование значений NULL](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL)

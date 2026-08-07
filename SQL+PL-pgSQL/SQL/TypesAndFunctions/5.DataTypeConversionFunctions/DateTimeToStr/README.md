@@ -60,3 +60,61 @@ SELECT
 --|--------------------------------|----|---------------|-----|----------|------------|---------------|---------------|---|-----------|---------|----------|-------|-------|--------|-------|-------|-----------|
 --|04-08-2026 21:57:41.831032 +0700|2026|26             |08   |AUGUST    |AUG         |3              |2              |04 |216        |TUESDAY  |TUE       |09     |21     |+07     |57     |41     |831        |
 ```
+
+Запрос 2. [Примеры преобразования даты и времени в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query2.sql)
+```sql
+SELECT
+	TO_CHAR(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH24-MI-SS') AS "DD-MM-YYYY HH24-MI-SS",
+	TO_CHAR(CURRENT_TIMESTAMP, 'DD-MM-YYY') AS "DD-MM-YYY",
+	TO_CHAR(CURRENT_TIMESTAMP, 'HH24-MI-SS') AS "HH24-MI-SS",
+	TO_CHAR(CURRENT_TIMESTAMP, 'DAY') AS "DAY",
+	TO_CHAR(CURRENT_TIMESTAMP, 'TZH') AS "TZH";
+
+--|DD-MM-YYYY HH24-MI-SS|DD-MM-YYY|HH24-MI-SS|DAY      |TZH|
+--|---------------------|---------|----------|---------|---|
+--|07-08-2026 15-37-09  |07-08-026|15-37-09  |FRIDAY   |+07|
+```
+
+Запрос 3. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query3.sql)
+```sql
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	hire_date,
+	TO_CHAR(hire_date, 'DAY')
+FROM
+	employees
+WHERE
+	TO_CHAR(hire_date, 'YYYY') = '1999';
+
+--|employee_id|first_name|last_name |hire_date |to_char  |
+--|-----------|----------|----------|----------|---------|
+--|107        |Diana     |Lorentz   |07-02-1999|SUNDAY   |
+--|113        |Luis      |Popp      |07-12-1999|TUESDAY  |
+--|119        |Karen     |Colmenares|10-08-1999|TUESDAY  |
+--|...        |...       |...       |...       |...      |
+--|198        |Donald    |OConnell  |21-06-1999|MONDAY   |
+```
+
+Запрос 4. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году, в воскресенье (*SUNDAY*)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query4.sql)
+```sql
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	hire_date,
+	TO_CHAR(hire_date, 'DAY')
+FROM
+	employees
+WHERE
+	TO_CHAR(hire_date, 'YYYY') = '1999'
+	AND RTRIM(TO_CHAR(hire_date, 'DAY')) = 'SUNDAY';
+
+--|employee_id|first_name|last_name|hire_date |to_char  |
+--|-----------|----------|---------|----------|---------|
+--|107        |Diana     |Lorentz  |07-02-1999|SUNDAY   |
+--|135        |Ki        |Gee      |12-12-1999|SUNDAY   |
+--|187        |Anthony   |Cabrio   |07-02-1999|SUNDAY   |
+--|191        |Randall   |Perkins  |19-12-1999|SUNDAY   |
+```

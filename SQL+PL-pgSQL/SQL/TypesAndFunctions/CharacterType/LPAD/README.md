@@ -4,7 +4,7 @@
 
 Функции **LPAD()** и **RPAD()** можно использовать для отображения результата выполнения запроса в виде, который более удобен для восприятия.
 
-Запрос 1. [Вывод данных о зарплате сотрудников, зарплата которых больше 12000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/LPAD/sql/query1.sql)
+Запрос 1. [Вывод данных о зарплате сотрудников, зарплата которых больше 12000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/LPAD/sql/query1.sql)
 
 ```sql
 SELECT
@@ -24,7 +24,7 @@ WHERE
 --|Michael Hartstein has a monthly salary of 13000.00 dollars.|
 ```
 
-Запрос 2. [Вывод данных о зарплате сотрудников, зарплата которых больше 12000, с использованием функций LPAD() и RPAD()](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/LPAD/sql/query2.sql)
+Запрос 2. [Вывод данных о зарплате сотрудников, зарплата которых больше 12000, с использованием функций LPAD() и RPAD()](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/LPAD/sql/query2.sql)
 
 ```sql
 SELECT

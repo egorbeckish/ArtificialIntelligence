@@ -2,7 +2,7 @@
 
 **REPLACE(str, search_str[, replace_str])** - Осуществляет поиск образца *search_str* в строке *str* и каждое найденное вхождение заменяет на *replace_str*.
 
-Запрос 1. [Посчитать, сколько раз символ 'e' встречается в столбце *first_nam*e, рассматривать только те значения, которые содержат символ 'e'](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/REPLACE/sql/query1.sql)
+Запрос 1. [Посчитать, сколько раз символ 'e' встречается в столбце *first_nam*e, рассматривать только те значения, которые содержат символ 'e'](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/REPLACE/sql/query1.sql)
 ```sql
 SELECT
 	first_name,

@@ -4,7 +4,7 @@
 
 Функция **STRPOS(str, search_str)** возвращает номер позиции в строке *str*, начиная с которой строка *search_str* входит в строку *str*. Если вхождений не найдено, то функция возвращает значение *0*.
 
-Запрос 1. [Использование функции STRPOS() для нахождения позиции первого пробела в названии товара](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/STRPOS/sql/query1.sql)
+Запрос 1. [Использование функции STRPOS() для нахождения позиции первого пробела в названии товара](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/STRPOS/sql/query1.sql)
 ```sql
 SELECT
 	product_name,
@@ -21,7 +21,7 @@ FROM
 --|ASUS X540LA                                                    |5     |
 ```
 
-Запрос 2. [Извлечь первое слово в названии товара](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/STRPOS/sql/query2.sql)
+Запрос 2. [Извлечь первое слово в названии товара](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/STRPOS/sql/query2.sql)
 ```sql
 SELECT
 	SUBSTRING(product_name FOR (STRPOS(product_name, ' ')))
@@ -38,7 +38,7 @@ FROM
 ```
 > Используя функцию **STRPOS()**, можно осуществлять поиск по части строчного значения.
 
-Запрос 3. [Вывести названия товаров, в которых есть слово Core](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/STRPOS/sql/query3.sql)
+Запрос 3. [Вывести названия товаров, в которых есть слово Core](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/STRPOS/sql/query3.sql)
 ```sql
 SELECT
 	product_name

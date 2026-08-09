@@ -2,7 +2,7 @@
 
 **UPPER(str)** - Осуществляет преобразование строки *str* в верхний регистр.
 
-Запрос 1. [Пример использования функции UPPER](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/UPPER/sql/query1.sql)
+Запрос 1. [Пример использования функции UPPER](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/UPPER/sql/query1.sql)
 ```sql
 SELECT
 	UPPER(product_name)
@@ -25,7 +25,7 @@ first_name = 'David'
 
 выведет только часть необходимых данных. Эту проблему можно решить, используя функции преобразования регистра.
 
-Запрос 2. [Вывести данные о сотрудниках, у которых столбец *first_name* имеет значение 'DAVID', или 'David', или 'david'](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType/UPPER/sql/query2.sql)
+Запрос 2. [Вывести данные о сотрудниках, у которых столбец *first_name* имеет значение 'DAVID', или 'David', или 'david'](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/UPPER/sql/query2.sql)
 
 ```sql
 SELECT

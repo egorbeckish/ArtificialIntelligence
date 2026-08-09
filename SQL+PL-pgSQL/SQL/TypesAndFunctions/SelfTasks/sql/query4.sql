@@ -1,0 +1,16 @@
+SELECT
+	product_name
+FROM
+	products
+WHERE
+	STRPOS(product_name, ' ') = 8;
+
+--|product_name                                      |
+--|--------------------------------------------------|
+--|Corsair K70 RGB MK.2 Cherry MX Red (CH-9109010-RU)|
+--|Samsung 24" S24F350FHI                            |
+--|G.Skill TridentZ RGB                              |
+--|Samsung 32" C32JG50QQI                            |
+--|Samsung 27" C27JG50QQI                            |
+--|G.Skill Ripjaws 4 Series                          |
+--|Samsung Galaxy S7 Edge 32Gb Black (SM-G935)       |

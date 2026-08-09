@@ -9,7 +9,7 @@
 
 > Проверка вхождение осуществляется с помощью *'@>'*.
 
-Запрос 1. [Пример использования функции TSTZRANGE с указаными датами](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TSTZRANGE/sql/query1.sql)
+Запрос 1. [Пример использования функции TSTZRANGE с указаными датами](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TSTZRANGE/sql/query1.sql)
 ```sql
 SELECT
 	TSTZRANGE('2024-01-01', '2024-01-03'); -- '[2024-01-01, 2024-01-03)'::TSTZRANGE
@@ -19,7 +19,7 @@ SELECT
 --|["2024-01-01 00:00:00+07","2024-01-03 00:00:00+07")|
 ```
 
-Запрос 2. [Пример использования функции TSTZRANGE с указанием бесконечности (будущего)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TSTZRANGE/sql/query2.sql)
+Запрос 2. [Пример использования функции TSTZRANGE с указанием бесконечности (будущего)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TSTZRANGE/sql/query2.sql)
 ```sql
 SELECT
 	TSTZRANGE('2024-01-01', NULL); -- '[2024-01-01, infinity)'::TSTZRANGE
@@ -29,7 +29,7 @@ SELECT
 --|["2024-01-01 00:00:00+07",)|
 ```
 
-Запрос 3. [Пример использования функции TSTZRANGE с проверкой вхождения дат в заданный диапазон](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/TSTZRANGE/sql/query3.sql)
+Запрос 3. [Пример использования функции TSTZRANGE с проверкой вхождения дат в заданный диапазон](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TSTZRANGE/sql/query3.sql)
 ```sql
 SELECT
 	TSTZRANGE('2024-01-01', '2024-01-03', '()'),										-- '(2024-01-01, 2024-01-03)'::TSTZRANGE

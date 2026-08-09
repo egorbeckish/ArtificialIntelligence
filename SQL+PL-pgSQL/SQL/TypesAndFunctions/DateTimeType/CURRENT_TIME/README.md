@@ -2,7 +2,7 @@
 
 **CURRENT_TIME** - Возвращает текущее время суток с указанием часового пояса.
 
-Запрос 1. [Пример использования функции CURRENT_TIME](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/CURRENT_TIME/sql/query1.sql)
+Запрос 1. [Пример использования функции CURRENT_TIME](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/CURRENT_TIME/sql/query1.sql)
 ```sql
 SELECT
 	CURRENT_TIME;

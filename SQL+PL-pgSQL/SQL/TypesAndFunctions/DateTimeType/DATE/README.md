@@ -8,7 +8,7 @@
 
 Прибавление целого значения *n* к значению типа *Date* эквивалентно прибавлению *n* дней к дате. Если в выражении участвует строка, содержащая значение даты или времени, то ее рекомендуется преобразовать к значению соответствующего типа, используя операцию приведения типа. Эта операция осуществляется путем размещения символа двойного двоеточия (::) и имени типа, к которому нужно привести строковое значение, например *‘05-4-2023’::date*.
 
-Запрос 1. [Пример использования функции DATE](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE/sql/query1.sql)
+Запрос 1. [Пример использования функции DATE](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/DATE/sql/query1.sql)
 ```sql
 SELECT
 	DATE '28.07.2026'; -- '28.07.2026'::DATE
@@ -18,7 +18,7 @@ SELECT
 --|2026-07-28|
 ```
 
-Запрос 2. [Вывод заданного значения даты, увеличенного на 45 дней](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/DATE/sql/query2.sql)
+Запрос 2. [Вывод заданного значения даты, увеличенного на 45 дней](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/DATE/sql/query2.sql)
 ```sql
 SELECT
 	DATE '28.07.2026' + 45 AS add_45; -- '28.07.2026'::DATE + 45 AS add_45

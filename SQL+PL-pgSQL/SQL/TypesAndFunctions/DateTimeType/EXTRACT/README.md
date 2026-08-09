@@ -2,7 +2,7 @@
 
 **EXTRACT(M FROM X)** - Извлекает заданную часть *M*(*second*; *minute*; *hour*; *day*; *dow*; *month*; *year*) из значения *X*.
 
-Запрос 1. [Пример использования функции EXTRACT](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query1.sql)
+Запрос 1. [Пример использования функции EXTRACT](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query1.sql)
 ```sql
 SELECT
 	NOW(),
@@ -13,7 +13,7 @@ SELECT
 --|31-07-2026 20:55:49.788395 +0700|7      |
 ```
 
-Запрос 2. [Вывести количество дней в значении, имеющем тип INTERVAL](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query2.sql)
+Запрос 2. [Вывести количество дней в значении, имеющем тип INTERVAL](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query2.sql)
 ```sql
 SELECT
 	EXTRACT(DAY FROM JUSTIFY_INTERVAL(INTERVAL '5000 hour 15 minute')) AS days;
@@ -23,7 +23,7 @@ SELECT
 --|28  |
 ```
 
-Запрос 3. [Для сотрудника *employee_id=145* вывести количество дней, прошедших между датой приема на работу и сегодняшним днем](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query3.sql)
+Запрос 3. [Для сотрудника *employee_id=145* вывести количество дней, прошедших между датой приема на работу и сегодняшним днем](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,
@@ -39,9 +39,9 @@ WHERE
 --|-----------|----------|------------|------|
 --|145        |01-10-1996|31-07-2026  |10 895|
 ```
-> В этом запросе количество дней, которые проработал сотрудник, определяется путем вычитания из текущей даты, которую возвращает функция **CURRENT_DATE**, даты приема на работу *hire_date*. Для того чтобы вывести продолжительность работы в формате лет-месяцев-дней, нужно использовать функцию **AGE()**. В примерах запросов содержится пример использования функции [AGE()](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/AGE).
+> В этом запросе количество дней, которые проработал сотрудник, определяется путем вычитания из текущей даты, которую возвращает функция **CURRENT_DATE**, даты приема на работу *hire_date*. Для того чтобы вывести продолжительность работы в формате лет-месяцев-дней, нужно использовать функцию **AGE()**. В примерах запросов содержится пример использования функции [AGE()](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/AGE).
 
-Запрос 4. [Вывести данные о сотрудниках, которые проработали более 30 лет](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query4.sql)
+Запрос 4. [Вывести данные о сотрудниках, которые проработали более 30 лет](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query4.sql)
 ```sql
 SELECT
 	employee_id,
@@ -63,7 +63,7 @@ WHERE
 --|206        |William   |Gietz    |07-06-1994|32 years 1 mon 24 days  |
 ```
 
-Запрос 5. [Вывести данные о договорах, которые были оформлены в воскресенье](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query5.sql)
+Запрос 5. [Вывести данные о договорах, которые были оформлены в воскресенье](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query5.sql)
 ```sql
 SELECT
 	*
@@ -82,7 +82,7 @@ WHERE
 ```
 > В этом примере функция **EXTRACT()** извлекает численное значение дня недели (параметр *dow*: воскресенье – 0, понедельник – 1 и т.д.) из даты оформления заказа *order_date*.
 
-Запрос 6. [Вывести employee_id сотрудников, работающих в 30-м отделе, и суммарную зарплату каждого сотрудника за весь период их работы. Данные расположить в порядке убывания суммарной зарплаты](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT/sql/query6.sql)
+Запрос 6. [Вывести employee_id сотрудников, работающих в 30-м отделе, и суммарную зарплату каждого сотрудника за весь период их работы. Данные расположить в порядке убывания суммарной зарплаты](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query6.sql)
 ```sql
 SELECT
 	employee_id,

@@ -1,3 +1,0 @@
-|current_timestamp               |year|year_of_century|month|month_word|month_alpha3|day_number_week|day_number_week|day|day_in_year|day_word |day_alpha3|hour_12|hour_24|timezone|minutes|seconds|miliseconds|
-|--------------------------------|----|---------------|-----|----------|------------|---------------|---------------|---|-----------|---------|----------|-------|-------|--------|-------|-------|-----------|
-|04-08-2026 21:57:41.831032 +0700|2026|26             |08   |AUGUST    |AUG         |3              |2              |04 |216        |TUESDAY  |TUE       |09     |21     |+07     |57     |41     |831        |

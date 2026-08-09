@@ -2,7 +2,7 @@
 
 **FACTORIAL(x, m)** - Факториал числа *n*.
 
-Запрос 1. [Пример использования функции FACTORIAL](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/FACTORIAL/sql/query1.sql)
+Запрос 1. [Пример использования функции FACTORIAL](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/FACTORIAL/sql/query1.sql)
 ```sql
 SELECT
 	FACTORIAL(5),

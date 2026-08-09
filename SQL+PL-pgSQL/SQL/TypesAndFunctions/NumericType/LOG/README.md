@@ -2,7 +2,7 @@
 
 **LOG(x, m)** - Производит вычисление логарифма числа *n* по основанию *m*.
 
-Запрос 1. [Пример использования функции LOG](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/LOG/sql/query1.sql)
+Запрос 1. [Пример использования функции LOG](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/LOG/sql/query1.sql)
 ```sql
 SELECT
 	LOG(25, 5),

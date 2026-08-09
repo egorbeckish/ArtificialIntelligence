@@ -2,7 +2,7 @@
 
 **ROUND(x,n)** - Выполняет округление числа *x* до ближайшего числа с заданной точностью *n*.
 
-Запрос 1. [Пример использования функции ROUND](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/ROUND/sql/query1.sql)
+Запрос 1. [Пример использования функции ROUND](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/ROUND/sql/query1.sql)
 ```sql
 SELECT
 	ROUND(246.67),
@@ -14,7 +14,7 @@ SELECT
 --|247  |246,7|250  |
 ```
 
-Запрос 2. [Вывести значение зарплаты сотрудников из отдела 60, округленные до 1000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/ROUND/sql/query2.sql)
+Запрос 2. [Вывести значение зарплаты сотрудников из отдела 60, округленные до 1000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/ROUND/sql/query2.sql)
 ```sql
 SELECT
 	employee_id,

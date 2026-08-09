@@ -2,7 +2,7 @@
 
 **MOD(n, m)** - Возвращает остаток от деления *n* на *m*.
 
-Запрос 1. [Пример использования функции MOD](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/MOD/sql/query1.sql)
+Запрос 1. [Пример использования функции MOD](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/MOD/sql/query1.sql)
 ```sql
 SELECT
 	MOD(5, 2),
@@ -14,7 +14,7 @@ SELECT
 --|1  |0,5|0,2|
 ```
 
-Запрос 2. [Вывести данные о сотрудниках из отдела 60, имеющих нечетный рейтинг](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/MOD/sql/query2.sql)
+Запрос 2. [Вывести данные о сотрудниках из отдела 60, имеющих нечетный рейтинг](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/MOD/sql/query2.sql)
 ```sql
 SELECT
 	employee_id,
@@ -36,7 +36,7 @@ WHERE
 --|105        |DAVID     |Austin   |60           |5       |
 ```
 
-Запрос 3. [Вывести ту часть зарплаты сотрудников из отдела 60, которая меньше 1000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/MOD/sql/query3.sql)
+Запрос 3. [Вывести ту часть зарплаты сотрудников из отдела 60, которая меньше 1000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/MOD/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,

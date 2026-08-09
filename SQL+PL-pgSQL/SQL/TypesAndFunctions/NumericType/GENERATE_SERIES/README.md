@@ -6,7 +6,7 @@
 
 Это может быть последовательность чисел или последовательность временных значений. В запросе 1 эта функция совместно с функцией **RANDOM()** используется для моделирования подбрасываний игрального кубика.
 
-Запрос 1. [Генерация последовательности случайных чисел с равномерным распределением, имеющих значения от 1 до 6](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType/GENERATE_SERIES/sql/query1.sql)
+Запрос 1. [Генерация последовательности случайных чисел с равномерным распределением, имеющих значения от 1 до 6](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/GENERATE_SERIES/sql/query1.sql)
 ```sql
 SELECT
 	s.i,

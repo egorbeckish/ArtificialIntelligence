@@ -8,6 +8,6 @@
 
 При работе с арифметическими выражениями следует иметь в виду следующее: арифметическое выражение вернет значение **NULL**, если один или несколько операндов будут иметь значение **NULL**. Результатом операции сравнения будет **NULL**, если один или оба операнда будут иметь значение **NULL**.
 
-Результат логических операций **AND** или **OR** с операндами, которые могут иметь значение **NULL**, приведен [в таблицах 1 и 2](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType/README.md).
+Результат логических операций **AND** или **OR** с операндами, которые могут иметь значение **NULL**, приведен [в таблицах 1 и 2](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/LogicalType/README.md).
 
-Для корректной обработки данных, которые могут иметь значения **NULL**, следует использовать функцию [**COALESCE()**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL/COALESCE).
+Для корректной обработки данных, которые могут иметь значения **NULL**, следует использовать функцию [**COALESCE()**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE).

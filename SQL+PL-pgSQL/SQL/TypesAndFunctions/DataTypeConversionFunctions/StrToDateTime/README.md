@@ -9,9 +9,9 @@
 - *X* - содержит символьное значение даты и времени.
 - *M* - маска преобразования, которая определяет, как нужно интерпретировать символьное представление даты и времени.
 
-Маска может содержать элементы формата, представленные в [таблице 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr). При использовании функции **TO_DATE()** следует использовать только те элементы формата, которые соответствуют дате (день, месяц, год).
+Маска может содержать элементы формата, представленные в [таблице 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/DateTimeToStr). При использовании функции **TO_DATE()** следует использовать только те элементы формата, которые соответствуют дате (день, месяц, год).
 
-Запрос 1. [Примеры использования функции **TO_DATE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToDateTime/sql/query1.sql)
+Запрос 1. [Примеры использования функции **TO_DATE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToDateTime/sql/query1.sql)
 ```sql
 SELECT
 	TO_DATE('01-SEP-2018', 'DD-MON-YYYY') AS "DD-MON-YYYY",
@@ -23,7 +23,7 @@ SELECT
 --|01-09-2018 |01-09-2018|01-09-2018|
 ```
 
-Запрос 2. [Примеры использования функций **TO_DATE()** и **TO_TIMESTAMP()**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToDateTime/sql/query2.sql)
+Запрос 2. [Примеры использования функций **TO_DATE()** и **TO_TIMESTAMP()**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToDateTime/sql/query2.sql)
 ```sql
 SELECT
 	TO_CHAR(TO_DATE('01-SEP-2018, 14:45:51', 'DD MON YYYY, HH24:MI:SS'), 'DD MON YYYY, HH24:MI:SS') AS "Date",

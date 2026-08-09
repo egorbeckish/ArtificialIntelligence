@@ -34,7 +34,7 @@
 
 Значения, представляющие собой текст (MONTH, DAY), можно задавать в различных регистрах: верхний, нижний и т.д.
 
-Запрос 1. [Примеры преобразования типов даты и времени в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query1.sql)
+Запрос 1. [Примеры преобразования типов даты и времени в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/DateTimeToStr/sql/query1.sql)
 ```sql
 SELECT
 	CURRENT_TIMESTAMP,
@@ -61,7 +61,7 @@ SELECT
 --|04-08-2026 21:57:41.831032 +0700|2026|26             |08   |AUGUST    |AUG         |3              |2              |04 |216        |TUESDAY  |TUE       |09     |21     |+07     |57     |41     |831        |
 ```
 
-Запрос 2. [Примеры преобразования даты и времени в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query2.sql)
+Запрос 2. [Примеры преобразования даты и времени в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/DateTimeToStr/sql/query2.sql)
 ```sql
 SELECT
 	TO_CHAR(CURRENT_TIMESTAMP, 'DD-MM-YYYY HH24-MI-SS') AS "DD-MM-YYYY HH24-MI-SS",
@@ -75,7 +75,7 @@ SELECT
 --|07-08-2026 15-37-09  |07-08-026|15-37-09  |FRIDAY   |+07|
 ```
 
-Запрос 3. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query3.sql)
+Запрос 3. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/DateTimeToStr/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,
@@ -97,7 +97,7 @@ WHERE
 --|198        |Donald    |OConnell  |21-06-1999|MONDAY   |
 ```
 
-Запрос 4. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году, в воскресенье (*SUNDAY*)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/DateTimeToStr/sql/query4.sql)
+Запрос 4. [Вывести данные о сотрудниках, которые были приняты на работу в 1999 году, в воскресенье (*SUNDAY*)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/DateTimeToStr/sql/query4.sql)
 ```sql
 SELECT
 	employee_id,

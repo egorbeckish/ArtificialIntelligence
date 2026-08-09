@@ -19,16 +19,16 @@
 | 0 | Цифра с ведущим нулём |
 | . | Десятичная точка |
 | , | Разделитель тысяч |
-| D | Десятичный разделитель (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr)) |
+| D | Десятичный разделитель (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
 | G | Разделитель групп (тысяч) |
 | $ | Знак доллара |
-| L | Символ валюты (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr)) |
+| L | Символ валюты (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
 | MI | Минус справа (отрицательное число) |
 | S | Знак плюс/минус |
 
 *M* определяет, как нужно интерпретировать символьное представление числа, может содержать те же элементы формата, что были определены для функции **TO_CHAR**.
 
-Запрос 1. [Примеры преобразования строки символов в число](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToInt/sql/query1.sql)
+Запрос 1. [Примеры преобразования строки символов в число](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToInt/sql/query1.sql)
 ```sql
 SELECT
 	TO_NUMBER('12345', '99999'),
@@ -48,7 +48,7 @@ SELECT
 --|12 345   |123,45   |1 234 567,89|123      |123      |123,45   |1 234 567,89|1 234,56 |1 234,56 |-123,45  |-123,45  |
 ```
 
-Запрос 2. [Если число символов в дробной части символьного представления будет больше числа элементов формата, то осуществляется усечение без округления.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToInt/sql/query2.sql)
+Запрос 2. [Если число символов в дробной части символьного представления будет больше числа элементов формата, то осуществляется усечение без округления.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToInt/sql/query2.sql)
 ```sql
 SELECT
 	TO_NUMBER('123.4567', '999.99');
@@ -58,7 +58,7 @@ SELECT
 --|123,45   |
 ```
 
-Запрос 3. [Если число элементов формата будет больше числа символов в целой или дробной части символьного представления, то ошибка не возникнет.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToInt/sql/query3.sql)
+Запрос 3. [Если число элементов формата будет больше числа символов в целой или дробной части символьного представления, то ошибка не возникнет.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToInt/sql/query3.sql)
 ```sql
 SELECT
 	TO_NUMBER('12.34', '99999.99');
@@ -68,7 +68,7 @@ SELECT
 --|12,34    |
 ```
 
-Запрос 4. [Если число символов в целой части символьного представления будет больше числа элементов формата, то возникает ошибка.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/StrToInt/sql/query4.sql)
+Запрос 4. [Если число символов в целой части символьного представления будет больше числа элементов формата, то возникает ошибка.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToInt/sql/query4.sql)
 ```sql
 SELECT
 	TO_NUMBER('1234.56', '999.99');

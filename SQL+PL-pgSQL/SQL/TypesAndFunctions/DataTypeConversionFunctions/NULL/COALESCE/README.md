@@ -7,7 +7,7 @@ COALESCE(x_1, x_2, ..., x_n)
 
 Функция возвращает первое **не-NULL** значение. Если все ее аргументы равны **NULL**, то функция возвращает **NULL**.
 
-Запрос 1. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30. Значение полной зарплаты равно salary*(1 + commission_pct)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL/COALESCE/sql/query1.sql)
+Запрос 1. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30. Значение полной зарплаты равно salary*(1 + commission_pct)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query1.sql)
 ```sql
 SELECT
 	employee_id,
@@ -35,7 +35,7 @@ ORDER BY
 
 Без использования функции **COALESCE()** полная зарплата сотрудников, у которых *commission_pct* имеет значение **NULL**, также имела бы значение **NULL**.
 
-Запрос 2. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30 и полная зарплата которых больше 3000. Данные расположить в порядке убывания полной зарплаты](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL/COALESCE/sql/query2.sql)
+Запрос 2. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30 и полная зарплата которых больше 3000. Данные расположить в порядке убывания полной зарплаты](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query2.sql)
 ```sql
 SELECT
 	employee_id,
@@ -62,7 +62,7 @@ ORDER BY
 
 В этом запросе следует обратить внимание на то, что псевдонимы столбцов (*total_salary*) можно использовать в предложении [**ORDER BY**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/ORDER), но нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).
 
-Запрос 3. [Вывести данные об отделах, расположенных не в Seattle (location_id <> 1700)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL/COALESCE/sql/query3.sql)
+Запрос 3. [Вывести данные об отделах, расположенных не в Seattle (location_id <> 1700)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query3.sql)
 ```sql
 SELECT
 	department_id,
@@ -85,7 +85,7 @@ WHERE
 
 Из результатов этого запроса видно, что для отделов 20 и 50 начальник не назначен. Рассмотрим другую версию этого запроса, в котором реализовано следующее бизнес-правило: для отделов, которым не назначен начальник, считать, что их начальником является Steven King (employee_id=100).
 
-Запрос 4. [Вывести данные об отделах, расположенных не в Seattle (location_id <> 1700)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/NULL/COALESCE/sql/query4.sql)
+Запрос 4. [Вывести данные об отделах, расположенных не в Seattle (location_id <> 1700)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query4.sql)
 ```sql
 SELECT
 	department_id,

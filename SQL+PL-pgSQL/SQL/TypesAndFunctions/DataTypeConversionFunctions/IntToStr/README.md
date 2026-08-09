@@ -20,7 +20,7 @@
 | , или G | Разделитель групп (тысяч) |
 | L       | Символ валюты (использует locale) |
 
-Запрос 1. [Примеры преобразования числа в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr/sql/query1.sql)
+Запрос 1. [Примеры преобразования числа в строку символов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr/sql/query1.sql)
 ```sql
 SELECT
 	TO_CHAR(1475.29, '9999.99') AS "9999.99",
@@ -42,7 +42,7 @@ SELECT
 
 В этом примере символ валюты представляет собой ?, так как локализация, определяемая параметром **LC_MONETARY**, имеет значение Russian_1251.
 
-Запрос 2. [Посмотреть значение этого параметра можно, используя команду:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr/sql/query2.sql)
+Запрос 2. [Посмотреть значение этого параметра можно, используя команду:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr/sql/query2.sql)
 ```sql
 SHOW LC_MONETARY;
 
@@ -51,7 +51,7 @@ SHOW LC_MONETARY;
 --|Russian_Russia.1251|
 ```
 
-Запрос 3. [Значение параметра **LC_MONETARY** можно изменить:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr/sql/query3.sql)
+Запрос 3. [Значение параметра **LC_MONETARY** можно изменить:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr/sql/query3.sql)
 ```sql
 SET LC_MONETARY TO 'de-DE'; -- символ валюты €
 
@@ -66,7 +66,7 @@ SET LC_MONETARY TO 'en-US'; -- символ валюты $
 --|en-US      |
 ```
 
-Запрос 4. [После выполнения второй команды результат преобразования числа в денежную сумму будет иметь следующий вид:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions/IntToStr/sql/query4.sql)
+Запрос 4. [После выполнения второй команды результат преобразования числа в денежную сумму будет иметь следующий вид:](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr/sql/query4.sql)
 ```sql
 SELECT TO_CHAR(1475.29, 'L9,999.99') As "L9,999.99";
 

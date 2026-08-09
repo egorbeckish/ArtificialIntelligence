@@ -23,7 +23,7 @@
 
 В предложении *SELECT* могут присутствовать выражения, которые имеют логический тип. Рассмотрим небольшую модификацию [запроса 5](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT), в который добавлен вычисляемый столбец *salary>10000*. Значение этого столбца будет иметь значение **true**, если значение зарплаты сотрудника будет больше 1000, и значение **false** в противном случае.
 
-Запрос 1. [Вывести данные о сотрудниках, которые проработали более 30 лет](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType/sql/query1.sql)
+Запрос 1. [Вывести данные о сотрудниках, которые проработали более 30 лет](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/LogicalType/sql/query1.sql)
 ```sql
 SELECT
 	employee_id,
@@ -46,7 +46,7 @@ WHERE
 ```
 Значения **UNKNOWN (NULL)** выводятся в виде пустой строки. В запросе 2 содержится выражение *commission_pct > 0.2*. Если столбец *commission_pct* будет иметь значение **NULL**, то результат этого выражения будет **UNKNOWN (NULL)**.
 
-Запрос 2. [Вывести данные о сотрудниках, которые работают в отделах 50, 60 и получают зарплату более 8000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType/sql/query2.sql)
+Запрос 2. [Вывести данные о сотрудниках, которые работают в отделах 50, 60 и получают зарплату более 8000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/LogicalType/sql/query2.sql)
 ```sql
 SELECT
 	employee_id,

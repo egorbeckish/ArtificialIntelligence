@@ -6,12 +6,12 @@ PostgreSQL имеет широкий набор встроенных типов 
 
 Для вывода результатов выполнения функций и выражений используется оператор **SELECT**. Согласно стандарту, данный оператор должен обязательно содержать предложение **FROM**, но в PostgreSQL данное требование не является обязательным.
 
-### [1. Числовые типы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType)
+### [Числовые типы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/1.NumericType)
 
-### [2. Символьные типы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType)
+### [Символьные типы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/2.CharacterType)
 
-### [3. Типы даты и времени](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType)
+### [Типы даты и времени](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType)
 
-### [4. Логический тип](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType)
+### [Логический тип](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/4.LogicalType)
 
-### [5. Функции преобразования типов данных](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions)
+### [Функции преобразования типов данных](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/5.DataTypeConversionFunctions)

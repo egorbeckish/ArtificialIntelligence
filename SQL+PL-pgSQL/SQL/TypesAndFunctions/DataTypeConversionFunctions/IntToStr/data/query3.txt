@@ -1,0 +1,7 @@
+|lc_monetary|
+|-----------|
+|de-DE      |
+
+|lc_monetary|
+|-----------|
+|en-US      |

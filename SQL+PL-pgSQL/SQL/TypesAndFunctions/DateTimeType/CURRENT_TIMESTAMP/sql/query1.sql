@@ -1,0 +1,6 @@
+SELECT
+	CURRENT_TIMESTAMP;
+
+--|current_time         |
+--|---------------------|
+--|20:33:14.019468 +0700|

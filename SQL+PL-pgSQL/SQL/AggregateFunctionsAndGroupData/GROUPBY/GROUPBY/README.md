@@ -1,6 +1,6 @@
 ## GROUP BY
 
-`GROUP BY {{список столбцов}}` - Группировка данных по группам.
+***`GROUP BY {{список столбцов}}`*** - Группировка данных по группам.
 
 Запрос 1. [Для каждого отдела вывести количество и суммарную зарплату сотрудников](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPBY/sql/query1.sql)
 ```sql
@@ -47,7 +47,7 @@ ORDER BY
 --|ST_CLERK|17   |
 --|ST_MAN  |5    |
 ```
-> В этом примере следует обратить внимание на то, что в отделах 30 и 50 есть сотрудники, у которых столбец *`job_id`* имеет значение ***`NULL`***. Группировка по этому значению выполнена, и функция *`COUNT(*)`* вернула количество таких сотрудников. Группировку можно осуществлять, используя вычисляемые столбцы.
+> В этом примере следует обратить внимание на то, что в отделах 30 и 50 есть сотрудники, у которых столбец *`job_id`* имеет значение ***`NULL`***. Группировка по этому значению выполнена, и функция [***`COUNT(*)`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT) вернула количество таких сотрудников. Группировку можно осуществлять, используя вычисляемые столбцы.
 
 Запрос 3. [Вывести количество заказов, оформленных в течение каждого года](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPBY/sql/query3.sql)
 ```sql

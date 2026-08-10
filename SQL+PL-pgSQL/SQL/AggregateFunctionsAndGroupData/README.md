@@ -5,7 +5,7 @@
 **Таблица 1. Основные агрегатные функции**
 
 | Функция         | Возвращает                                                                 | Тип аргумента       |
-|-----------------|------------------------------------------------------------------------------|---------------------|
+|-----------------|:------------------------------------------------------------------------------:|---------------------:|
 | [SUM(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SUM)       | Сумму значений ***`expr`***, игнорируя значения ***`NULL`***                                | Число               |
 | [COUNT(expr(*))](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT)  | Число строк, игнорируя значения ***`NULL`***. При использовании в качестве аргумента *`*`* - число строк | Любой               |
 | [MAX(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MAX)       | Максимальное значение ***`expr`***, игнорируя значения ***`NULL`***                         | Число, строка, дата |

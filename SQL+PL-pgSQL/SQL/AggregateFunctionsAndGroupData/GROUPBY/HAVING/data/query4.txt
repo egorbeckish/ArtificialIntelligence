@@ -1,0 +1,5 @@
+|job_id|num_job|
+|------|-------|
+|SA_MAN|5      |
+|SA_REP|3      |
+|AD_VP |2      |

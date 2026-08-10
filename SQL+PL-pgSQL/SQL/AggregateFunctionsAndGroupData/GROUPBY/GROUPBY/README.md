@@ -1,6 +1,6 @@
 ## GROUP BY
 
-***`GROUP BY {{список столбцов}}`*** - Группировка данных по группам.
+***`GROUP BY {список столбцов}`*** - Группировка данных по группам.
 
 Запрос 1. [Для каждого отдела вывести количество и суммарную зарплату сотрудников](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPBY/sql/query1.sql)
 ```sql

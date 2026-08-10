@@ -66,5 +66,5 @@ ORDER BY
 --|             |ST_CLERK|4       |2    |
 --|             |ST_MAN  |4       |1    |
 ```
-> [!TIPS]
+> [!TIP]
 > ***`GROUPING SETS`*** позволяет гибко задавать уровни агрегации, избегая избыточных строк, которые генерирует [***`CUBE`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/CUBE).

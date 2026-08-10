@@ -42,4 +42,5 @@ ORDER BY
 ```
 Результаты этого запроса содержат данные, которые возвращал [запрос 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/ROLLUP), и итоговые данные о сотрудниках, занимающих каждую должность. В используемой схеме [***`HR POC`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL) должности для каждого отдела уникальны, поэтому данные о количестве сотрудников, занимающих каждую должность, повторяются.
 
-Оператор ***`GROUP BY CUBE`*** выводит очень много строк, поэтому в ряде случаев удобнее использовать оператор [***`GROUP BY GROUPING SETS`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPINGSETS).
+> [!TIP]
+>Оператор ***`GROUP BY CUBE`*** выводит очень много строк, поэтому в ряде случаев удобнее использовать оператор [***`GROUP BY GROUPING SETS`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPINGSETS).

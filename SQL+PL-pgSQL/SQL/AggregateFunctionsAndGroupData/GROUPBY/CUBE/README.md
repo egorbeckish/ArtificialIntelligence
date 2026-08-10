@@ -5,7 +5,7 @@
 GROUP BY CUBE (список столбцов)
 ```
 
-> Рассмотрим решение задачи из [запроса 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/ROLLUP) с использованием этого оператора.
+Рассмотрим решение задачи из [запроса 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/ROLLUP) с использованием этого оператора.
 
 Запрос 1. [Используя GROUP BY CUBE, вывести для сотрудников, работающих в отделах 30 и 50, рейтинг которых >2, код должности и количество занимающих каждую должность](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/CUBE/sql/query1.sql)
 ```sql

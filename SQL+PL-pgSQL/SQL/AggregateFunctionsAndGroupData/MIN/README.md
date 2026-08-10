@@ -1,6 +1,6 @@
 ## MIN
 
-***`MIN(expr)`*** - Минимальное значение *expr*, игнорируя значения ***`NULL`***.
+***`MIN(expr)`*** - Минимальное значение ***`expr`***, игнорируя значения ***`NULL`***.
 
 Запрос 1. [Вывести обобщенные данные о зарплате сотрудников](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MIN/sql/query1.sql)
 ```sql

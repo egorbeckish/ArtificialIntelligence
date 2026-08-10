@@ -1,6 +1,6 @@
 ## AVG
 
-***`AVG(expr)`*** - Среднее значение *expr*, игнорируя значения ***`NULL`***.
+***`AVG(expr)`*** - Среднее значение ***`expr`***, игнорируя значения ***`NULL`***.
 
 Запрос 1. [Вывести обобщенные данные о зарплате сотрудников](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/AVG/sql/query1.sql)
 ```sql

@@ -7,7 +7,7 @@
 | Функция         | Возвращает                                                                 | Тип аргумента       |
 |-----------------|------------------------------------------------------------------------------|---------------------|
 | [SUM(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SUM)       | Сумму значений *expr*, игнорируя значения **NULL**                                | Число               |
-| [COUNT(expr(*))](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT)  | Число строк, игнорируя значения **NULL**. При использовании в качестве аргумента '*' - число строк | Любой               |
+| [COUNT(expr(*))](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT)  | Число строк, игнорируя значения **NULL**. При использовании в качестве аргумента *`*`* - число строк | Любой               |
 | [MAX(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MAX)       | Максимальное значение *expr*, игнорируя значения **NULL**                         | Число, строка, дата |
 | [MIN(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MIN)       | Минимальное значение *expr*, игнорируя значения **NULL**                          | Число, строка, дата |
 | [AVG(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/AVG)       | Среднее значение *expr*, игнорируя значения **NULL**                              | Число               |
@@ -24,7 +24,7 @@ FROM {таблица}
 [DISTINCT] {имя столбца} | {выражение} | {однострочная функция}
 ```
 
-Агрегатные функции нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).Например, НЕЛЬЗЯ найти сотрудника с максимальной зарплатой, используя следующий запрос.
+Агрегатные функции нельзя использовать в предложении [***`WHERE`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).Например, НЕЛЬЗЯ найти сотрудника с максимальной зарплатой, используя следующий запрос.
 
 Запрос 1. Найти сотрудника, получающего максимальную зарплату (ошибка)
 ```sql
@@ -60,6 +60,6 @@ WHERE
 --|-----------|-------|
 --|100        |24 000 |
 ```
-> Этот запрос содержит в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE) подзапрос.
+> Этот запрос содержит в предложении [***`WHERE`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE) подзапрос.
 
 ### [Чаще всего агрегатные функции используются в запросах с группировкой.](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY)

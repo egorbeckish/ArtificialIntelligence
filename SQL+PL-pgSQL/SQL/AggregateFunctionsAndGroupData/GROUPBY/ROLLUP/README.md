@@ -7,7 +7,7 @@ GROUP BY ROLLUP (список столбцов)
 
 Для демонстрации возможностей, которые предоставляет оператор ***`GROUP BY ROLLUP`***, рассмотрим следующую задачу:
 
-Запрос 1. [Для сотрудников, работающих в отделах 30 и 50, рейтинг которых >2, вывести код должности и количество занимающих каждую должность](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/ROLLUP/sql/query1.sql)
+Запрос 1. [Для сотрудников, работающих в отделах 30 и 50, рейтинг которых > 2, вывести код должности и количество занимающих каждую должность](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/ROLLUP/sql/query1.sql)
 ```sql
 SELECT
 	department_id,

@@ -24,7 +24,43 @@ FROM {таблица}
 [DISTINCT] {имя столбца} | {выражение} | {однострочная функция}
 ```
 
-Агрегатные функции нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).
+Агрегатные функции нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).Например, НЕЛЬЗЯ найти сотрудника с максимальной зарплатой, используя следующий запрос.
+
+Запрос 1. Найти сотрудника, получающего максимальную зарплату (ошибка)
+```sql
+SELECT
+	employee_id,
+	salary
+FROM
+	employees
+WHERE
+	salary = MAX(salary);
+
+--Error occurred during SQL query execution
+--SQL Error [42803]: ОШИБКА: агрегатные функции нельзя применять в конструкции WHERE
+--Позиция: 68
+```
+
+Запрос 2. Найти сотрудника, получающего максимальную зарплату
+```sql
+SELECT
+	employee_id,
+	salary AS maximum
+FROM
+	employees
+WHERE
+	salary = (
+	SELECT
+		MAX(salary)
+	FROM
+		employees
+	);
+
+--|employee_id|maximum|
+--|-----------|-------|
+--|100        |24 000 |
+```
+> Этот запрос содержит в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE) подзапрос.
 
 Чаще всего агрегатные функции используются в запросах с группировкой. В общем виде запрос с группировкой может быть представлен в следующем виде:
 ```sql

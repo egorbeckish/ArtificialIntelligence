@@ -1,8 +1,8 @@
 SELECT
-	SUM(salary)
+	MAX(salary)
 FROM
 	employees;
 
---|sum    |
---|-------|
---|669 100|
+--|max   |
+--|------|
+--|24 000|

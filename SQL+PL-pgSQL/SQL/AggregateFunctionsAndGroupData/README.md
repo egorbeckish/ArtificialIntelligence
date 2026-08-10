@@ -6,11 +6,11 @@
 
 | Функция         | Возвращает                                                                 | Тип аргумента       |
 |-----------------|------------------------------------------------------------------------------|---------------------|
-| [SUM(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SUM)       | Сумму значений expr, игнорируя значения NULL                                | Число               |
-| [COUNT(expr(*))](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT)  | Число строк, игнорируя значения NULL. При использовании в качестве аргумента * — число строк | Любой               |
-| [MAX(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MAX)       | Максимальное значение expr, игнорируя значения NULL                         | Число, строка, дата |
-| [MIN(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MIN)       | Минимальное значение expr, игнорируя значения NULL                          | Число, строка, дата |
-| [AVG(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/AVG)       | Среднее значение expr, игнорируя значения NULL                              | Число               |
+| [SUM(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SUM)       | Сумму значений expr, игнорируя значения **NULL**                                | Число               |
+| [COUNT(expr(*))](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/COUNT)  | Число строк, игнорируя значения **NULL**. При использовании в качестве аргумента '*' - число строк | Любой               |
+| [MAX(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MAX)       | Максимальное значение expr, игнорируя значения **NULL**                         | Число, строка, дата |
+| [MIN(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/MIN)       | Минимальное значение expr, игнорируя значения **NULL**                          | Число, строка, дата |
+| [AVG(expr)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/AVG)       | Среднее значение expr, игнорируя значения **NULL**                              | Число               |
 
 Синтаксис агрегатных функций:
 ```sql
@@ -24,7 +24,7 @@ FROM {таблица}
 [DISTINCT] {имя столбца} | {выражение} | {однострочная функция}
 ```
 
-Агрегатные функции нельзя использовать в предложении **WHERE**.
+Агрегатные функции нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).
 
 Чаще всего агрегатные функции используются в запросах с группировкой. В общем виде запрос с группировкой может быть представлен в следующем виде:
 ```sql

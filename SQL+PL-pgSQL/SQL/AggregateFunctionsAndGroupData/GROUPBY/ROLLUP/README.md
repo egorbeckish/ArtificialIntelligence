@@ -37,7 +37,7 @@ ORDER BY
 --|             |        |30   |
 ```
 
-Решение этой задачи без использования ***`ROLLUP`*** содержится в [запросе 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/HAVING). По сравнению с результатами, которые выводит [запрос 1](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/HAVING), этот запрос выводит данные о количестве сотрудников в каждом отделе и общем количестве сотрудников, работающих в рассматриваемых отделах.
+Решение этой задачи без использования ***`ROLLUP`*** содержится в [запросе 4](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPBY). По сравнению с результатами, которые выводит [запрос 4](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/GROUPBY/GROUPBY), этот запрос выводит данные о количестве сотрудников в каждом отделе и общем количестве сотрудников, работающих в рассматриваемых отделах.
 
 Добавим в условие группировки столбец *`rating_e`*.
 

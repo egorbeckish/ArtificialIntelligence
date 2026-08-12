@@ -1,6 +1,6 @@
 # Задачи для самостоятельного решения
 
-Запрос 1. [Определить средний размер комиссионных.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query1.sql)
+Запрос 1. [Определить средний размер комиссионных.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query1.sql)
 ```sql
 SELECT
 	AVG(commission_pct)
@@ -12,7 +12,7 @@ FROM
 --|0,2189189189|
 ```
 
-Запрос 2. [Найти количество товаров, в названии которых есть слово CORE.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query2.sql)
+Запрос 2. [Найти количество товаров, в названии которых есть слово CORE.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query2.sql)
 ```sql
 SELECT
 	product_name
@@ -38,7 +38,7 @@ WHERE
 --|Intel Core i7 9700F OEM Coffee Lake Refresh 1151v2             |
 ```
 
-Запрос 3. [Вывести номера менеджеров и суммарную зарплату их подчиненных, имеющих нечетный рейтинг.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query3.sql)
+Запрос 3. [Вывести номера менеджеров и суммарную зарплату их подчиненных, имеющих нечетный рейтинг.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query3.sql)
 ```sql
 SELECT
 	manager_id,
@@ -59,7 +59,7 @@ GROUP BY
 --|205       |8 300 |
 ```
 
-Запрос 4. [Вывести количество заказов, которые клиент 46 оформил в течение каждого года.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query4.sql)
+Запрос 4. [Вывести количество заказов, которые клиент 46 оформил в течение каждого года.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query4.sql)
 ```sql
 SELECT
 	EXTRACT(YEAR FROM order_date) AS "year",
@@ -92,7 +92,7 @@ ORDER BY
 --|2 019|1    |
 ```
 
-Запрос 5. [Вывести количество заказов, оформленных за каждый месяц 2019 года.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query5.sql)
+Запрос 5. [Вывести количество заказов, оформленных за каждый месяц 2019 года.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query5.sql)
 ```sql
 SELECT
 	EXTRACT(MONTH FROM order_date) AS "month",
@@ -131,7 +131,7 @@ ORDER BY
 --|12   |2    |
 ```
 
-Запрос 6. [Определить номера товаров, по которым было совершено меньше 10 продаж. Продажа - это строка в таблице Order_items.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query6.sql)
+Запрос 6. [Определить номера товаров, по которым было совершено меньше 10 продаж. Продажа - это строка в таблице Order_items.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query6.sql)
 ```sql
 SELECT
 	product_id,
@@ -152,7 +152,7 @@ HAVING
 --|11        |2    |
 ```
 
-Запрос 7. [Вывести номера отделов, в которых более 5 менеджеров. Менеджером является сотрудник, который руководит другими сотрудниками. Его employee_id содержится в столбце manager_id других сотрудников.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query7.sql)
+Запрос 7. [Вывести номера отделов, в которых более 5 менеджеров. Менеджером является сотрудник, который руководит другими сотрудниками. Его employee_id содержится в столбце manager_id других сотрудников.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query7.sql)
 ```sql
 SELECT
 	department_id,
@@ -170,7 +170,7 @@ HAVING
 --|80           |6    |
 ```
 
-Запрос 8. [Для заказов вывести номера товаров в заказе, их количество, общую стоимость каждого товара и всего заказа. Вывести эти данные только для заказов, у которых order_id < 10.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query8.sql)
+Запрос 8. [Для заказов вывести номера товаров в заказе, их количество, общую стоимость каждого товара и всего заказа. Вывести эти данные только для заказов, у которых order_id < 10.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query8.sql)
 ```sql
 SELECT
 	order_id,
@@ -195,7 +195,7 @@ GROUP BY
 --|        |          |330     |428 770   |
 ```
 
-Запрос 9. [Вывести количество заказов, оформленных в течение каждого года, и количество заказов, которые оформил каждый клиент. Вывести только те строки, в которых количество заказов > 4.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query9.sql)
+Запрос 9. [Вывести количество заказов, оформленных в течение каждого года, и количество заказов, которые оформил каждый клиент. Вывести только те строки, в которых количество заказов > 4.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query9.sql)
 ```sql
 SELECT
 	EXTRACT(YEAR FROM order_date) AS order_year,
@@ -224,7 +224,7 @@ ORDER BY
 --|          |           |98         |
 ```
 
-Запрос 10. [Для каждого отдела вывести суммарную зарплату сотрудников за весь период их работы.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/SelfTasks/sql/query10.sql)
+Запрос 10. [Для каждого отдела вывести суммарную зарплату сотрудников за весь период их работы.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/AggregateFunctionsAndGroupData/SelfTasks/sql/query10.sql)
 ```sql
 SELECT
 	department_id,

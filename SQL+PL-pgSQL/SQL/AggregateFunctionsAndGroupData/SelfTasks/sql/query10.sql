@@ -1,0 +1,24 @@
+SELECT
+	department_id,
+	SUM(salary * (EXTRACT(YEAR FROM AGE(hire_date)) * 12 + EXTRACT(MONTH FROM AGE(hire_date))))
+FROM
+	employees
+GROUP BY
+	department_id
+ORDER BY
+	department_id;
+
+--|department_id|sum       |
+--|-------------|----------|
+--|10           |2 050 400 |
+--|20           |6 827 000 |
+--|30           |8 981 700 |
+--|40           |2 509 000 |
+--|50           |52 075 100|
+--|60           |11 185 800|
+--|70           |3 860 000 |
+--|80           |98 007 800|
+--|90           |25 604 000|
+--|100          |18 412 200|
+--|110          |7 835 800 |
+--|             |2 282 000 |

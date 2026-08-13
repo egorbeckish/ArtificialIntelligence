@@ -6,19 +6,19 @@
 
 **Таблица 1. Таблица истинности логической функции AND с учетом значений NULL**
 
-| AND   | TRUE  | FALSE | NULL  |
-|-------|-------|-------|-------|
-| TRUE  | TRUE  | FALSE | NULL  |
+| AND | TRUE | FALSE | NULL |
+|-|-|-|-|
+| TRUE | TRUE | FALSE | NULL |
 | FALSE | FALSE | FALSE | **FALSE** |
-| NULL  | NULL  | FALSE | NULL  |
+| NULL | NULL | FALSE | NULL |
 
 **Таблица 2. Таблица истинности логической функции OR с учетом значений NULL**
 
-| OR    | TRUE  | FALSE | NULL  |
-|-------|-------|-------|-------|
-| TRUE  | TRUE  | TRUE  | **TRUE**  |
-| FALSE | TRUE  | FALSE | NULL  |
-| NULL  | TRUE  | NULL  | NULL  |
+| OR | TRUE | FALSE | NULL |
+|-|-|-|-|
+| TRUE | TRUE | TRUE | **TRUE** |
+| FALSE | TRUE | FALSE | NULL |
+| NULL | TRUE | NULL | NULL |
 > В предложении [***`SELECT`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/SELECT) могут присутствовать выражения, которые имеют логический тип.
 
 В предложении [***`SELECT`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/SELECT) могут присутствовать выражения, которые имеют логический тип. Рассмотрим небольшую модификацию [запроса 5](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT), в который добавлен вычисляемый столбец ***`salary > 10000`***. Значение этого столбца будет иметь значение ***`true`***, если значение зарплаты сотрудника будет больше 1000, и значение ***`false`*** в противном случае.

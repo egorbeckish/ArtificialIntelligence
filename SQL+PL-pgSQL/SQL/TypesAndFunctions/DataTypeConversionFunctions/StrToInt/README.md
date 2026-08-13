@@ -2,31 +2,31 @@
 
 Для преобразования символьного значения в число используется функция:
 
-**TO_NUMBER(X,M)**
+***`TO_NUMBER(X,M)`***
 
 где:
-- *X* - символьное представление числа;
-- *M* - маска преобразования.
+- **`X`** - символьное представление числа;
+- **`M`** - маска преобразования.
 
-*X* может содержать цифры и символы, которые соответствуют заданному формату.
+***`X`*** может содержать цифры и символы, которые соответствуют заданному формату.
 
 Маска преобразования может содержать элементы формата, представленные в таблице 1.
 
 **Таблица 1. Элементы числового форматирования**
 | Элемент | Описание |
-|---------|----------|
+|-|:-:|
 | 9 | Цифра (0–9) |
 | 0 | Цифра с ведущим нулём |
 | . | Десятичная точка |
 | , | Разделитель тысяч |
-| D | Десятичный разделитель (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
+| D | Десятичный разделитель (зависит от [**`LC_MONETARY`**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
 | G | Разделитель групп (тысяч) |
 | $ | Знак доллара |
-| L | Символ валюты (зависит от [LC_MONETARY](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
+| L | Символ валюты (зависит от [**`LC_MONETARY`**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/IntToStr)) |
 | MI | Минус справа (отрицательное число) |
 | S | Знак плюс/минус |
 
-*M* определяет, как нужно интерпретировать символьное представление числа, может содержать те же элементы формата, что были определены для функции **TO_CHAR**.
+***`M`*** определяет, как нужно интерпретировать символьное представление числа, может содержать те же элементы формата, что были определены для функции ***`TO_CHAR`***.
 
 Запрос 1. [Примеры преобразования строки символов в число](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/StrToInt/sql/query1.sql)
 ```sql

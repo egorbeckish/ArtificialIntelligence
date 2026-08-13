@@ -1,11 +1,11 @@
 ## Функция COALESCE
 
-Используется в выражениях, элементы которых могут иметь значение **NULL**, и имеет следующий синтаксис:
+Используется в выражениях, элементы которых могут иметь значение ***`NULL`***, и имеет следующий синтаксис:
 ```sql
 COALESCE(x_1, x_2, ..., x_n)
 ```
 
-Функция возвращает первое **не-NULL** значение. Если все ее аргументы равны **NULL**, то функция возвращает **NULL**.
+Функция возвращает первое ***`не-NULL`*** значение. Если все ее аргументы равны ***`NULL`***, то функция возвращает ***`NULL`***.
 
 Запрос 1. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30. Значение полной зарплаты равно salary*(1 + commission_pct)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query1.sql)
 ```sql
@@ -33,7 +33,7 @@ ORDER BY
 --|119        |Karen     |Colmenares|2 500 |       |2 500       |
 ```
 
-Без использования функции **COALESCE()** полная зарплата сотрудников, у которых *commission_pct* имеет значение **NULL**, также имела бы значение **NULL**.
+Без использования функции ***`COALESCE()`*** полная зарплата сотрудников, у которых ***`commission_pct`*** имеет значение ***`NULL`***, также имела бы значение ***`NULL`***.
 
 Запрос 2. [Вывести данные о полной зарплате сотрудников, которые работают в отделе 30 и полная зарплата которых больше 3000. Данные расположить в порядке убывания полной зарплаты](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query2.sql)
 ```sql
@@ -60,7 +60,7 @@ ORDER BY
 --|117        |Sigal     |Tobias   |2 800 |0,1    |3 080       |
 ```
 
-В этом запросе следует обратить внимание на то, что псевдонимы столбцов (*total_salary*) можно использовать в предложении [**ORDER BY**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/ORDER), но нельзя использовать в предложении [**WHERE**](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).
+В этом запросе следует обратить внимание на то, что псевдонимы столбцов (***`total_salary`***) можно использовать в предложении [***`ORDER BY`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/ORDER), но нельзя использовать в предложении [***`WHERE`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE).
 
 Запрос 3. [Вывести данные об отделах, расположенных не в Seattle (location_id <> 1700)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DataTypeConversionFunctions/NULL/COALESCE/sql/query3.sql)
 ```sql

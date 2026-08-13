@@ -1,8 +1,8 @@
 ## 4. Логический тип
 
-Переменные и выражения, имеющие логический тип **BOOLEAN**, могут принимать значения **TRUE**, **FALSE** и **UNKNOWN**, которое можно представить значением **NULL**.
+Переменные и выражения, имеющие логический тип ***`BOOLEAN`***, могут принимать значения ***`TRUE`***, ***`FALSE`*** и ***`UNKNOWN`***, которое можно представить значением ***`NULL`***.
 
-Результат логических операций **AND** и **OR** над значениями этого типа приведен в таблицах 1 и 2 соответственно.
+Результат логических операций ***`AND`*** и ***`OR`*** над значениями этого типа приведен в таблицах 1 и 2 соответственно.
 
 **Таблица 1. Таблица истинности логической функции AND с учетом значений NULL**
 
@@ -19,9 +19,9 @@
 | TRUE  | TRUE  | TRUE  | **TRUE**  |
 | FALSE | TRUE  | FALSE | NULL  |
 | NULL  | TRUE  | NULL  | NULL  |
-> В предложении SELECT могут присутствовать выражения, которые имеют логический тип.
+> В предложении [***`SELECT`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/SELECT) могут присутствовать выражения, которые имеют логический тип.
 
-В предложении *SELECT* могут присутствовать выражения, которые имеют логический тип. Рассмотрим небольшую модификацию [запроса 5](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT), в который добавлен вычисляемый столбец *salary>10000*. Значение этого столбца будет иметь значение **true**, если значение зарплаты сотрудника будет больше 1000, и значение **false** в противном случае.
+В предложении [***`SELECT`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/SELECT) могут присутствовать выражения, которые имеют логический тип. Рассмотрим небольшую модификацию [запроса 5](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/3.DateTimeType/EXTRACT), в который добавлен вычисляемый столбец ***`salary > 10000`***. Значение этого столбца будет иметь значение ***`true`***, если значение зарплаты сотрудника будет больше 1000, и значение ***`false`*** в противном случае.
 
 Запрос 1. [Вывести данные о сотрудниках, которые проработали более 30 лет](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/LogicalType/sql/query1.sql)
 ```sql
@@ -44,7 +44,7 @@ WHERE
 --|...        |...       |...      |...       |...     |
 --|206        |William   |Gietz    |07-06-1994|false   |
 ```
-Значения **UNKNOWN (NULL)** выводятся в виде пустой строки. В запросе 2 содержится выражение *commission_pct > 0.2*. Если столбец *commission_pct* будет иметь значение **NULL**, то результат этого выражения будет **UNKNOWN (NULL)**.
+Значения ***`UNKNOWN (NULL)`*** выводятся в виде пустой строки. В запросе 2 содержится выражение ***`commission_pct > 0.2`***. Если столбец ***`commission_pct`*** будет иметь значение ***`NULL`***, то результат этого выражения будет ***`UNKNOWN (NULL)`***.
 
 Запрос 2. [Вывести данные о сотрудниках, которые работают в отделах 50, 60 и получают зарплату более 8000](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/LogicalType/sql/query2.sql)
 ```sql

@@ -7,12 +7,12 @@ PostgreSQL поддерживает все типы данных для пред
 **Таблица 1. Характеристики типов даты и времени**
 
 | Имя | Размер | Описание | Диапазон значений |
-|-----|--------|----------|-------------------|
+|-|:-:|:-:|:-:|
 | [DATE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/DATE) | 4 байта | Дата без указания времени | От 4713 до н.э. до 5874897 н.э. |
-| [TIME [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIME) | 8 байт | Время суток без указания часового пояса, с точностью *p* после точки в секундах | От 00:00:00.000000 до 24:00:00.000000 |
-| [TIME [ (p) ] WITH TIME ZONE (TIMETZ [ (p) ])](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIME) | 8 байт | Время суток с указанием часового пояса, с точностью *p* после точки в секундах | От 00:00:00.000000 +1559 до 24:00:00.000000 -1559 |
-| [TIMESTAMP [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток без указания часового пояса, с точностью *p* после точки в секундах | От 4713 до н.э. до 294276 н.э. |
-| [TIMESTAMP [ (p) ] WITH TIME ZONE (TIMESTAMPTZ [ (p) ])](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток с указанием часового пояса, с точностью *p* после точки в секундах | От 4713 до н.э. до 294276 н.э. |
+| [TIME [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIME) | 8 байт | Время суток без указания часового пояса, с точностью ***`p`*** после точки в секундах | От 00:00:00.000000 до 24:00:00.000000 |
+| [TIME [ (p) ] WITH TIME ZONE (TIMETZ [ (p) ])](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIME) | 8 байт | Время суток с указанием часового пояса, с точностью ***`p`*** после точки в секундах | От 00:00:00.000000 +1559 до 24:00:00.000000 -1559 |
+| [TIMESTAMP [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток без указания часового пояса, с точностью ***`p`*** после точки в секундах | От 4713 до н.э. до 294276 н.э. |
+| [TIMESTAMP [ (p) ] WITH TIME ZONE (TIMESTAMPTZ [ (p) ])](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP) | 8 байт | Дата и время суток с указанием часового пояса, с точностью ***`p`*** после точки в секундах | От 4713 до н.э. до 294276 н.э. |
 | [TSTZRANGE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TSTZRANGE) | 16 байт | Диапазон дат с подтипом timestamp with time zone | От 4713 до н.э. до 294276 н.э. |
 | [INTERVAL [FIELDS] [ (p) ]](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/INTERVAL) | 16 байт | Временной интервал | От -1780000000 лет до +1780000000 лет |
 
@@ -21,7 +21,7 @@ PostgreSQL поддерживает все типы данных для пред
 **Таблица 2. Основные функции для работы с данными типов даты и времени**
 
 | Функция | Описание и пример |
-|---------|------------------|
+|-|:-:|
 | [AGE(X,Y)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/AGE) | Возвращает разницу между датами (X-Y) в виде интервала в годах, месяцах, днях, часах и т.д. AGE('2023-03-08', '2011-06-14') → 11 years 8 mons 24 days |
 | [AGE([timestamp] X)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/AGE) | Возвращает разницу между текущей датой и датой X в виде интервала в годах, месяцах, днях, часах и т.д. AGE(timestamp '2023-03-08') → 1 mon 17 days |
 | [CURRENT_DATE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/CURRENT_DATE) | Возвращает текущую дату CURRENT_DATE → 25-04-2023 |
@@ -32,7 +32,7 @@ PostgreSQL поддерживает все типы данных для пред
 | [EXTRACT(M FROM X)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT) | Извлекает заданную часть M(second; minute; hour; day; dow; month; year) из значения X SELECT CURRENT_DATE, EXTRACT('MONTH' FROM CURRENT_DATE) → 25-04-2023\| 4\| |
 | [JUSTIFY_INTERVAL(INTERVAL)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/JUSTIFY_INTERVAL) | Преобразует значение INTERVAL в корректный формат даты и времени TIMESTAMP SELECT JUSTIFY_INTERVAL(INTERVAL '5000 hour 15 minute') → 6 mons 28 days 08:15:00 |
 
-Стандарт ISO 8601 рекомендует использовать для вывода данных типа **DATE** формат *‘yyyy-mm-dd’* (год-месяц-день), но PostgreSQL позволяет использовать и другие форматы. При настройке соединения postgres был установлен формат *‘dd-mm-yyyy’* (день-месяц-год).
+Стандарт ISO 8601 рекомендует использовать для вывода данных типа ***`DATE`*** формат *`yyyy-mm-dd`* (год-месяц-день), но PostgreSQL позволяет использовать и другие форматы. При настройке соединения postgres был установлен формат *`dd-mm-yyyy`* (день-месяц-год).
 
 Значения, имеющие типы даты и времени, могут участвовать в арифметических операциях, но с некоторыми ограничениями. Например, разница между двумя датами равна количеству дней, прошедших между этими датами, но нельзя непосредственно складывать значения, имеющие тип *Date*.
 

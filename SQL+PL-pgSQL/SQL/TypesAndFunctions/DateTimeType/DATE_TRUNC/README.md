@@ -1,6 +1,6 @@
 ## DATE_TRUNC
 
-**DATE_TRUNC(M,X)** - Обрезает значение *X* до заданной точности *M* (*second*; *minute*; *hour*; *day*; *dow*; *month*; *year*).
+***`DATE_TRUNC(M,X)`*** - Обрезает значение ***`X`*** до заданной точности ***`M`*** (***`second`***; ***`minute`***; ***`hour`***; ***`day`***; ***`dow`***; ***`month`***; ***`year`***).
 
 Запрос 1. [Пример использования функции DATE_TRUNC](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/DATE_TRUNC/sql/query1.sql)
 ```sql

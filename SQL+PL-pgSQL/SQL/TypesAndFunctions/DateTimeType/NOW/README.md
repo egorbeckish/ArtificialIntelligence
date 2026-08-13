@@ -1,6 +1,6 @@
 ## NOW
 
-**NOW** - Возвращает текущую дату и время с указанием часового пояса.
+***`NOW`*** - Возвращает текущую дату и время с указанием часового пояса.
 
 Запрос 1. [Пример использования функции NOW](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/NOW/sql/query1.sql)
 ```sql

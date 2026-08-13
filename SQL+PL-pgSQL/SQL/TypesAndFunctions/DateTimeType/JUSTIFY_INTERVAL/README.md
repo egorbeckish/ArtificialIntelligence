@@ -1,6 +1,6 @@
 ## JUSTIFY_INTERVAL
 
-**JUSTIFY_INTERVAL(INTERVAL)** - Преобразует значение **INTERVAL** в корректный формат даты и времени **TIMESTAMP**.
+***`JUSTIFY_INTERVAL(INTERVAL)`*** - Преобразует значение [***`INTERVAL`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/INTERVAL) в корректный формат даты и времени [***`TIMESTAMP`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP).
 
 Запрос 1. [Пример использования функции JUSTIFY_INTERVAL](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/JUSTIFY_INTERVAL/sql/query1.sql)
 ```sql

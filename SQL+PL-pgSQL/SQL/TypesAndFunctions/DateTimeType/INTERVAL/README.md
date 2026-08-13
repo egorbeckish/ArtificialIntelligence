@@ -1,8 +1,8 @@
 ## INTERVAL
 
-**INTERVAL [FIELDS] [(p)]** - Временной интервал, где *FIELDS* - значение интервала, *p* - точность после точки в секундах.
+***`INTERVAL [FIELDS] [(p)]`*** - Временной интервал, где ***`FIELDS`*** - значение интервала, ***`p`*** - точность после точки в секундах.
 
-> Значение интервала *FIELDS* представляет собой выражение: ```quantity unit [quantity unit]```, где *quantity* - количество, которое может быть как положительным, так и отрицательным, *unit* - единица измерения: *year*, *month*, *day*, *hour*, *minute*, *second*, *microsecond* и некоторые другие единицы.
+> Значение интервала ***`FIELDS`*** представляет собой выражение: ```quantity unit [quantity unit]```, где ***`quantity`*** - количество, которое может быть как положительным, так и отрицательным, ***`unit`*** - единица измерения: ***`year`***, ***`month`***, ***`day`***, ***`hour`***, ***`minute`***, ***`second`***, ***`microsecond`*** и некоторые другие единицы.
 
 Запрос 1. [Вывести значение даты, заданной в виде интервала](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/INTERVAL/sql/query1.sql)
 ```sql

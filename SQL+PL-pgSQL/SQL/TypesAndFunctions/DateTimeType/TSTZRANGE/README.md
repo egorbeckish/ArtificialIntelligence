@@ -1,13 +1,13 @@
 ## TSTZRANGE
 
-**TSTZRANGE** - Диапазон дат с подтипом timestamp with time zone.
+***`TSTZRANGE`*** - Диапазон дат с подтипом [***`timestamp with time zone`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TIMESTAMP).
 
 ---
-> По умолчанию возвращается нестрогая левая граница и строгая правая граница *'[)'*;
+> По умолчанию возвращается нестрогая левая граница и строгая правая граница *`'[)'`*;
 
-> **NULL** можно считать за бесконечность (через :: необходимо указывать *-infinity*/*infinity*);
+> ***`NULL`*** можно считать за бесконечность (через :: необходимо указывать *`-infinity`*/*`infinity`*);
 
-> Проверка вхождение осуществляется с помощью *'@>'*.
+> Проверка вхождение осуществляется с помощью *`'@>'`*.
 
 Запрос 1. [Пример использования функции TSTZRANGE с указаными датами](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/TSTZRANGE/sql/query1.sql)
 ```sql

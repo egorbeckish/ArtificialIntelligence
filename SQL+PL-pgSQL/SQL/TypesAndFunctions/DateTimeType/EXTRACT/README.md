@@ -1,6 +1,6 @@
 ## EXTRACT
 
-**EXTRACT(M FROM X)** - Извлекает заданную часть *M*(*second*; *minute*; *hour*; *day*; *dow*; *month*; *year*) из значения *X*.
+***`EXTRACT(M FROM X)`*** - Извлекает заданную часть **`M`** (***`second`***; ***`minute`***; ***`hour`***; ***`day`***; ***`dow`***; ***`month`***; ***`year`***) из значения ***`X`***.
 
 Запрос 1. [Пример использования функции EXTRACT](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/DateTimeType/EXTRACT/sql/query1.sql)
 ```sql

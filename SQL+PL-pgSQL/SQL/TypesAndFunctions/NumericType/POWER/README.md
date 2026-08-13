@@ -1,6 +1,6 @@
 ## POWER
 
-**POWER(x, n)** - Возводит число *x* в степень *n*.
+***`POWER(x, n)`*** - Возводит число **`x`** в степень **`n`**.
 
 Запрос 1. [Пример использования функции POWER](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/POWER/sql/query1.sql)
 ```sql
@@ -13,7 +13,7 @@ SELECT
 --|-----|-----|-----|
 --|4    |3    |0,1  |
 ```
-> Вместо функции **POWER** можно использовать операцию возведения в степень **x^a**.
+> Вместо функции ***`POWER`*** можно использовать операцию возведения в степень ***`x^a`***.
 
 Запрос 2. [Пример использования операции возведения в степень](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/POWER/sql/query2.sql)
 ```sql

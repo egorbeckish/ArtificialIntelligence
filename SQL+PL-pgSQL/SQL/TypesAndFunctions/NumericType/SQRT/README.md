@@ -1,6 +1,6 @@
 ## SQRT
 
-**SQRT(x)** - Возвращает квадратный корень от числа *x*.
+***`SQRT(x)`*** - Возвращает квадратный корень от числа ***`x`***.
 
 Запрос 1. [Пример использования функции SQRT](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/SQRT/sql/query1.sql)
 ```sql

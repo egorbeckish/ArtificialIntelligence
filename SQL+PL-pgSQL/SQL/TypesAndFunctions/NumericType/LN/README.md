@@ -1,6 +1,6 @@
 ## LN
 
-**LN(x)** - Вычисляет натуральный логарифм от числа *n*.
+***`LN(x)`*** - Вычисляет натуральный логарифм от числа ***`n`***.
 
 Запрос 1. [Пример использования функции LN](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/LN/sql/query1.sql)
 ```sql

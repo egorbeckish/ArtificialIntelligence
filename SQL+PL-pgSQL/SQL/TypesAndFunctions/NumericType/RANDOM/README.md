@@ -1,6 +1,6 @@
 ## RANDOM
 
-**RANDOM()** - Возвращает случайное значение в диапазоне 0.0 <= *x* < 1.
+***`RANDOM()`*** - Возвращает случайное значение в диапазоне *0.0* <= ***`x`*** < *1.0*.
 
 Запрос 1. [Пример использования функции RANDOM](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/RANDOM/sql/query1.sql)
 ```sql

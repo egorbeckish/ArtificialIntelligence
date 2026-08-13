@@ -1,6 +1,6 @@
 ## TRUNC
 
-**TRUNC(x, n)** - Усекает (отбрасывает) значащие цифры числа *x* справа без округления, с заданной точностью *n*.
+***`TRUNC(x, n)`*** - Усекает (отбрасывает) значащие цифры числа ***`x`*** справа без округления, с заданной точностью ***`n`***.
 
 Запрос 1. [Пример использования функции TRUNC](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/TRUNC/sql/query1.sql)
 ```sql

@@ -1,6 +1,6 @@
 ## SETSEED
 
-**SETSEED(Y)** - Задает начальное значение для последующих random() вызовов; аргумент *у* должен быть в диапазоне от -1.0 до 1.0 включительно.
+***`SETSEED(Y)`*** - Задает начальное значение для последующих [***`random()`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/RANDOM) вызовов; аргумент ***`у`*** должен быть в диапазоне от *-1.0* до *1.0* включительно.
 
 Запрос 1. [Пример использования функции SETSEED](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/SETSEED/sql/query1.sql)
 ```sql

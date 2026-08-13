@@ -1,6 +1,6 @@
 ## DIV
 
-**DIV(n, m)** - Целая часть результата при делении *n* на *m*.
+***`DIV(n, m)`*** - Целая часть результата при делении ***`n`*** на ***`m`***.
 
 Запрос 1. [Пример использования функции DIV](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/DIV/sql/query1.sql)
 ```sql

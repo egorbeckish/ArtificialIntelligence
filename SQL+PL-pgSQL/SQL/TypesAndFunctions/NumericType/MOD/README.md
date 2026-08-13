@@ -1,6 +1,6 @@
 ## MOD
 
-**MOD(n, m)** - Возвращает остаток от деления *n* на *m*.
+***`MOD(n, m)`*** - Возвращает остаток от деления ***`n`*** на ***`m`***.
 
 Запрос 1. [Пример использования функции MOD](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/NumericType/MOD/sql/query1.sql)
 ```sql

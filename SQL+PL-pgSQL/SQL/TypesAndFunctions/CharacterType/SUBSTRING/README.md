@@ -1,6 +1,6 @@
 ## SUBSTRING
 
-**SUBSTRING(str[FROM n] [FOR m])** - Возвращает фрагмент строки *str*, начиная с символа *n* длиной *m*.
+***`SUBSTRING(str[FROM n] [FOR m])`*** - Возвращает фрагмент строки ***`str`***, начиная с символа ***`n`*** длиной ***`m`***.
 
 Запрос 1. [Пример использования функции SUBSTRING](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/SUBSTRING/sql/query1.sql)
 ```sql

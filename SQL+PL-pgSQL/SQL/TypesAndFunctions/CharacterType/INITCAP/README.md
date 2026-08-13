@@ -1,6 +1,6 @@
 ## INITCAP
 
-**INITCAP(str)** - Осуществляет преобразование начальных букв каждого слова в верхний регистр.
+***`INITCAP(str)`*** - Осуществляет преобразование начальных букв каждого слова в верхний регистр.
 
 Запрос 1. [Пример использования функции INITCAP](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/INITCAP/sql/query1.sql)
 ```sql

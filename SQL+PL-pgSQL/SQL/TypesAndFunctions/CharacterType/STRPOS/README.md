@@ -1,8 +1,8 @@
 ## STRPOS
 
-**STRPOS(str, search_str)** - Возвращает позицию первого вхождения строки *search_str* в строку str.
+***`STRPOS(str, search_str)`*** - Возвращает позицию первого вхождения строки ***`search_str`*** в строку str.
 
-Функция **STRPOS(str, search_str)** возвращает номер позиции в строке *str*, начиная с которой строка *search_str* входит в строку *str*. Если вхождений не найдено, то функция возвращает значение *0*.
+Функция ***`STRPOS(str, search_str)`*** возвращает номер позиции в строке ***`str`***, начиная с которой строка ***`search_str`*** входит в строку ***`str`***. Если вхождений не найдено, то функция возвращает значение ***`0`***.
 
 Запрос 1. [Использование функции STRPOS() для нахождения позиции первого пробела в названии товара](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/TypesAndFunctions/CharacterType/STRPOS/sql/query1.sql)
 ```sql

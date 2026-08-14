@@ -1,0 +1,44 @@
+|customer_id|c_name                      |sales    |
+|-----------|----------------------------|---------|
+|49         |Vaillant Group              |1 880 350|
+|48         |Electrolux Group            |1 512 100|
+|45         |Nikon Corporation           |1 221 050|
+|2          |Boeing                      |960 420  |
+|46         |Liebherr                    |950 180  |
+|6          |Textron                     |837 230  |
+|3          |Oracle Corporation          |819 220  |
+|41         |Einhell Germany AG          |675 600  |
+|47         |DAIKIN INDUSTRIES           |642 700  |
+|20         |Caterpillar                 |577 500  |
+|18         |Anglo American plc          |370 750  |
+|23         |Deere & Company             |355 900  |
+|69         |WALTER AG                   |319 500  |
+|7          |Daimler                     |317 080  |
+|52         |Fujifilm Holdings           |303 000  |
+|66         |GEA WESTFALIA SEPARATOR AG  |261 620  |
+|22         |CNH Industrial              |258 160  |
+|64         |Sysmex Corporation          |248 460  |
+|65         |SAINT-GOBAIN                |237 250  |
+|54         |Miele                       |220 400  |
+|56         |Rosenbauer International AG |210 150  |
+|44         |Canon Inc.                  |184 880  |
+|33         |BIZERBA SE & Co. KG         |138 720  |
+|43         |ALFRED KARCHER GMBH & CO. KG|131 390  |
+|68         |Norsk Hydro ASA             |128 250  |
+|24         |Rockwell Automation         |114 840  |
+|39         |SAKAI HEAVY INDUSTRIES, LTD |109 300  |
+|19         |Rio Tinto Limited           |93 280   |
+|51         |Whirlpool                   |82 800   |
+|63         |Dentsply Sirona             |61 540   |
+|25         |DAIKIN INDUSTRIES           |60 200   |
+|31         |ARBURG GmbH + Co KG         |48 910   |
+|70         |Adidas AG                   |44 440   |
+|59         |Johnson & Johnson           |32 120   |
+|60         |Agilent Technologies        |26 220   |
+|28         |FLSmidth                    |21 600   |
+|42         |Microsoft Corporation       |19 000   |
+|61         |Becton Dickinson            |15 600   |
+|55         |BAXI GROUP LIMITED          |10 080   |
+|53         |FERROLI S.p.A.              |8 100    |
+|67         |Georg Fischer AG            |4 200    |
+|57         |PALFINGER AG                |860      |

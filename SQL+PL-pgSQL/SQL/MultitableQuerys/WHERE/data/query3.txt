@@ -1,0 +1,10 @@
+|order_id|order_date|product_name                      |quantity|unit_price|
+|--------|----------|----------------------------------|--------|----------|
+|11      |28-11-2018|LG V30+ Black (H930DS)            |113     |560       |
+|30      |12-08-2018|Lenovo IdeaPad 510-15 (80SV0047RK)|70      |2 020     |
+|30      |12-08-2018|ASUS 27" VG279QM TUF Gaming       |64      |1 160     |
+|70      |21-02-2017|Gigabyte B450M S2H mATX AM4       |146     |1 900     |
+|70      |21-02-2017|HP ProBook 430 G4 (Y7Z47EA)       |32      |2 800     |
+|95      |19-09-2019|Gigabyte 27" Aorus AD27QD-EK      |138     |1 260     |
+|95      |19-09-2019|Gigabyte B460M DS3H mATX LGA1200  |144     |1 900     |
+|102     |21-12-2019|Gigabyte Z490 AORUS PRO AX LGA1200|69      |1 850     |

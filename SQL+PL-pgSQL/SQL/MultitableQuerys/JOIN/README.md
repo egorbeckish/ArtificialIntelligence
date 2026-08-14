@@ -7,5 +7,5 @@ FROM {таблица 1} [тип соединения] JOIN {таблица 2} [�
 ```
 Таблицу, расположенную слева от оператора ***`JOIN`*** (***`{таблица 1}`***), будем называть ***`левой таблицей`***, а таблицу, расположенную справа от оператора ***`JOIN`*** (***`{таблица 2}`***), будем называть ***`правой таблицей`***. Можно создавать два типа соединений: ***`внутренние`*** и ***`внешние`***.
 
-### [Внутренние соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/InternalСonnection)
-### [Внешнее соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/ExternalConnection)
+### [Внутренние соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalСonnection)
+### [Внешнее соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/ExternalConnection)

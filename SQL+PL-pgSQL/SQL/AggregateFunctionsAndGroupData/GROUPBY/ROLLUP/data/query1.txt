@@ -1,0 +1,10 @@
+|department_id|job_id  |count|
+|-------------|--------|-----|
+|30           |PU_CLERK|4    |
+|30           |        |4    |
+|50           |PU_CLERK|1    |
+|50           |SH_CLERK|12   |
+|50           |ST_CLERK|12   |
+|50           |ST_MAN  |1    |
+|50           |        |26   |
+|             |        |30   |

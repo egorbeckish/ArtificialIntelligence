@@ -1,0 +1,17 @@
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	department_id
+FROM
+	employees
+WHERE
+	first_name LIKE 'L%';
+
+--|employee_id|first_name|last_name|department_id|
+--|-----------|----------|---------|-------------|
+--|102        |Lex       |De Haan  |90           |
+--|113        |Luis      |Popp     |100          |
+--|129        |Laura     |Bissot   |50           |
+--|160        |Louise    |Doran    |80           |
+--|168        |Lisa      |Ozer     |80           |

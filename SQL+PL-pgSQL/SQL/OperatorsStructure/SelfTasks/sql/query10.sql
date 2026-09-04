@@ -1,0 +1,12 @@
+SELECT
+	*
+FROM
+	employees
+WHERE
+	salary * (1 + commission_pct) BETWEEN 5000 AND 7000;
+
+--|employee_id|first_name|last_name|email   |phone_number      |hire_date |job_id|salary|commission_pct|manager_id|department_id|rating_e|
+--|-----------|----------|---------|--------|------------------|----------|------|------|--------------|----------|-------------|--------|
+--|167        |Amit      |Banda    |ABANDA  |011.44.1346.729268|2000-04-21|SA_REP|6 200 |0,1           |147       |80           |3       |
+--|173        |Sundita   |Kumar    |SKUMAR  |011.44.1343.329268|2000-04-21|SA_REP|6 100 |0,1           |148       |80           |2       |
+--|179        |Charles   |Johnson  |CJOHNSON|011.44.1644.429262|2000-01-04|SA_REP|6 200 |0,1           |149       |80           |4       |

@@ -1,0 +1,105 @@
+|employee_id|department_id|first_name |last_name  |salary|job_id    |level|
+|-----------|-------------|-----------|-----------|------|----------|-----|
+|100        |90           |Steven     |King       |24 000|AD_PRES   |high |
+|101        |90           |Neena      |Kochhar    |17 000|AD_VP     |high |
+|102        |90           |Lex        |De Haan    |17 000|AD_VP     |high |
+|103        |60           |Alexander  |Hunold     |9 000 |IT_PROG   |midl |
+|104        |60           |Bruce      |Ernst      |6 000 |IT_PROG   |midl |
+|106        |60           |Valli      |Pataballa  |4 800 |IT_PROG   |low  |
+|107        |60           |Diana      |Lorentz    |4 200 |IT_PROG   |low  |
+|108        |100          |Nancy      |Greenberg  |12 000|FI_MGR    |high |
+|109        |100          |Daniel     |Faviet     |9 000 |FI_ACCOUNT|midl |
+|110        |100          |John       |Chen       |8 200 |FI_ACCOUNT|midl |
+|111        |100          |Ismael     |Sciarra    |7 700 |FI_ACCOUNT|midl |
+|112        |100          |Jose Manuel|Urman      |7 800 |FI_ACCOUNT|midl |
+|113        |100          |Luis       |Popp       |6 900 |FI_ACCOUNT|midl |
+|115        |30           |Alexander  |Khoo       |3 100 |PU_CLERK  |low  |
+|118        |30           |Guy        |Himuro     |2 600 |PU_CLERK  |low  |
+|119        |30           |Karen      |Colmenares |2 500 |PU_CLERK  |low  |
+|120        |50           |Matthew    |Weiss      |8 000 |ST_MAN    |midl |
+|121        |50           |Adam       |Fripp      |8 200 |ST_MAN    |midl |
+|122        |50           |Payam      |Kaufling   |7 900 |ST_MAN    |midl |
+|123        |50           |Shanta     |Vollman    |6 500 |ST_MAN    |midl |
+|124        |50           |Kevin      |Mourgos    |5 800 |ST_MAN    |midl |
+|128        |50           |Steven     |Markle     |2 200 |ST_CLERK  |low  |
+|129        |50           |Laura      |Bissot     |3 300 |ST_CLERK  |low  |
+|130        |50           |Mozhe      |Atkinson   |2 800 |ST_CLERK  |low  |
+|131        |50           |James      |Marlow     |2 500 |ST_CLERK  |low  |
+|133        |50           |Jason      |Mallin     |3 300 |ST_CLERK  |low  |
+|134        |50           |Michael    |Rogers     |2 900 |ST_CLERK  |low  |
+|135        |50           |Ki         |Gee        |2 400 |ST_CLERK  |low  |
+|136        |50           |Hazel      |Philtanker |2 200 |ST_CLERK  |low  |
+|137        |50           |Renske     |Ladwig     |3 600 |ST_CLERK  |low  |
+|138        |50           |Stephen    |Stiles     |3 200 |ST_CLERK  |low  |
+|139        |50           |John       |Seo        |2 700 |ST_CLERK  |low  |
+|140        |50           |Joshua     |Patel      |2 500 |ST_CLERK  |low  |
+|141        |50           |Trenna     |Rajs       |3 500 |ST_CLERK  |low  |
+|142        |50           |Curtis     |Davies     |3 100 |ST_CLERK  |low  |
+|143        |50           |Randall    |Matos      |2 600 |ST_CLERK  |low  |
+|144        |50           |Peter      |Vargas     |2 500 |ST_CLERK  |low  |
+|145        |80           |John       |Russell    |14 000|SA_MAN    |high |
+|146        |80           |Karen      |Partners   |13 500|SA_MAN    |high |
+|147        |80           |Alberto    |Errazuriz  |12 000|SA_MAN    |high |
+|148        |80           |Gerald     |Cambrault  |11 000|SA_MAN    |high |
+|149        |80           |Eleni      |Zlotkey    |10 500|SA_MAN    |high |
+|150        |80           |Peter      |Tucker     |10 000|SA_REP    |midl |
+|151        |80           |David      |Bernstein  |9 500 |SA_REP    |midl |
+|153        |80           |Christopher|Olsen      |8 000 |SA_REP    |midl |
+|154        |80           |Nanette    |Cambrault  |7 500 |SA_REP    |midl |
+|155        |80           |Oliver     |Tuvault    |7 000 |SA_REP    |midl |
+|156        |80           |Janette    |King       |10 000|SA_REP    |midl |
+|157        |80           |Patrick    |Sully      |9 500 |SA_REP    |midl |
+|158        |80           |Allan      |McEwen     |9 000 |SA_REP    |midl |
+|160        |80           |Louise     |Doran      |7 500 |SA_REP    |midl |
+|161        |80           |Sarath     |Sewall     |7 000 |SA_REP    |midl |
+|162        |80           |Clara      |Vishney    |10 500|SA_REP    |high |
+|163        |80           |Danielle   |Greene     |9 500 |SA_REP    |midl |
+|164        |80           |Mattea     |Marvins    |7 200 |SA_REP    |midl |
+|165        |80           |David      |Lee        |6 800 |SA_REP    |midl |
+|166        |80           |Sundar     |Ande       |6 400 |SA_REP    |midl |
+|167        |80           |Amit       |Banda      |6 200 |SA_REP    |midl |
+|168        |80           |Lisa       |Ozer       |11 500|SA_REP    |high |
+|169        |80           |Harrison   |Bloom      |10 000|SA_REP    |midl |
+|170        |80           |Tayler     |Fox        |9 600 |SA_REP    |midl |
+|171        |80           |William    |Smith      |7 400 |SA_REP    |midl |
+|172        |80           |Elizabeth  |Bates      |7 300 |SA_REP    |midl |
+|173        |80           |Sundita    |Kumar      |6 100 |SA_REP    |midl |
+|114        |30           |Den        |Raphaely   |11 000|PU_MAN    |high |
+|116        |30           |Shelli     |Baida      |2 900 |PU_CLERK  |low  |
+|117        |30           |Sigal      |Tobias     |2 800 |PU_CLERK  |low  |
+|174        |80           |Ellen      |Abel       |11 000|SA_REP    |high |
+|175        |80           |Alyssa     |Hutton     |8 800 |SA_REP    |midl |
+|127        |50           |James      |Landry     |2 400 |PU_CLERK  |low  |
+|176        |80           |Jonathon   |Taylor     |8 600 |SA_REP    |midl |
+|177        |80           |Jack       |Livingston |8 400 |SA_REP    |midl |
+|178        |             |Kimberely  |Grant      |7 000 |SA_REP    |midl |
+|179        |80           |Charles    |Johnson    |6 200 |SA_REP    |midl |
+|180        |50           |Winston    |Taylor     |3 200 |SH_CLERK  |low  |
+|181        |50           |Jean       |Fleaur     |3 100 |SH_CLERK  |low  |
+|182        |50           |Martha     |Sullivan   |2 500 |SH_CLERK  |low  |
+|183        |50           |Girard     |Geoni      |2 800 |SH_CLERK  |low  |
+|184        |50           |Nandita    |Sarchand   |4 200 |SH_CLERK  |low  |
+|185        |50           |Alexis     |Bull       |4 100 |SH_CLERK  |low  |
+|186        |50           |Julia      |Dellinger  |3 400 |SH_CLERK  |low  |
+|187        |50           |Anthony    |Cabrio     |3 000 |SH_CLERK  |low  |
+|188        |50           |Kelly      |Chung      |3 800 |SH_CLERK  |low  |
+|189        |50           |Jennifer   |Dilly      |3 600 |SH_CLERK  |low  |
+|190        |50           |Timothy    |Gates      |2 900 |SH_CLERK  |low  |
+|191        |50           |Randall    |Perkins    |2 500 |SH_CLERK  |low  |
+|192        |50           |Sarah      |Bell       |4 000 |SH_CLERK  |low  |
+|193        |50           |Britney    |Everett    |3 900 |SH_CLERK  |low  |
+|194        |50           |Samuel     |McCain     |3 200 |SH_CLERK  |low  |
+|195        |50           |Vance      |Jones      |2 800 |SH_CLERK  |low  |
+|196        |50           |Alana      |Walsh      |3 100 |SH_CLERK  |low  |
+|197        |50           |Kevin      |Feeney     |3 000 |SH_CLERK  |low  |
+|198        |50           |Donald     |OConnell   |2 600 |SH_CLERK  |low  |
+|199        |50           |Douglas    |Grant      |2 600 |SH_CLERK  |low  |
+|200        |10           |Jennifer   |Whalen     |4 400 |AD_ASST   |low  |
+|201        |20           |Michael    |Hartstein  |13 000|MK_MAN    |high |
+|202        |20           |Pat        |Fay        |6 000 |MK_REP    |midl |
+|203        |40           |Susan      |Mavris     |6 500 |HR_REP    |midl |
+|204        |70           |Hermann    |Baer       |10 000|PR_REP    |midl |
+|205        |110          |Shelley    |Higgins    |12 000|AC_MGR    |high |
+|206        |110          |William    |Gietz      |8 300 |AC_ACCOUNT|midl |
+|105        |60           |DAVID      |Austin     |4 800 |IT_PROG   |low  |
+|126        |50           |Irene      |Mikkilineni|2 700 |PU_CLERK  |low  |

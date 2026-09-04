@@ -1,0 +1,22 @@
+SELECT
+	product_name
+FROM
+	products
+WHERE
+	UPPER(product_name) LIKE '%CORE%';
+
+SELECT
+	product_name
+FROM
+	products
+WHERE
+	STRPOS(UPPER(product_name), 'CORE') > 0;
+
+--|product_name                                                   |
+--|---------------------------------------------------------------|
+--|Intel Core i7 10700F OEM Comet Lake LGA1200 (CM8070104282329)  |
+--|Intel Core i7 10700K BOX Comet Lake LGA1200 (BX8070110700K)    |
+--|Intel Core i7 10700K OEM Comet Lake LGA1200 (CM8070104282436)  |
+--| Intel Core i5 10600KF OEM Comet Lake LGA1200 (CM8070104282136)|
+--|Intel Core i3 10100F OEM Comet Lake LGA1200 (CM8070104291318)  |
+--|Intel Core i7 9700F OEM Coffee Lake Refresh 1151v2             |

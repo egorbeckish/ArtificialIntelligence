@@ -1,0 +1,25 @@
+SELECT
+	employee_id,
+	first_name,
+	last_name,
+	department_id,
+	salary
+FROM
+	employees
+WHERE
+	department_id IN (10, 20, 30)
+ORDER BY
+	department_id,
+	salary DESC;
+
+--|employee_id|first_name|last_name |department_id|salary|
+--|-----------|----------|----------|-------------|------|
+--|200        |Jennifer  |Whalen    |10           |4 400 |
+--|201        |Michael   |Hartstein |20           |13 000|
+--|202        |Pat       |Fay       |20           |6 000 |
+--|114        |Den       |Raphaely  |30           |11 000|
+--|115        |Alexander |Khoo      |30           |3 100 |
+--|116        |Shelli    |Baida     |30           |2 900 |
+--|117        |Sigal     |Tobias    |30           |2 800 |
+--|118        |Guy       |Himuro    |30           |2 600 |
+--|119        |Karen     |Colmenares|30           |2 500 |

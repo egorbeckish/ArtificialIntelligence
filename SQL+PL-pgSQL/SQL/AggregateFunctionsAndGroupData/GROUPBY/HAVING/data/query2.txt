@@ -1,0 +1,10 @@
+|job_id    |diff |
+|----------|-----|
+|SH_CLERK  |1 700|
+|SA_MAN    |3 500|
+|IT_PROG   |4 800|
+|ST_CLERK  |1 400|
+|PU_CLERK  |700  |
+|ST_MAN    |2 400|
+|SA_REP    |5 400|
+|FI_ACCOUNT|2 100|

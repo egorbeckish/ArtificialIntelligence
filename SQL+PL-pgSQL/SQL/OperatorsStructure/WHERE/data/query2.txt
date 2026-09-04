@@ -1,0 +1,4 @@
+|employee_id|first_name|last_name|salary|department_id|
+|-----------|----------|---------|------|-------------|
+|129        |Laura     |Bissot   |3 300 |50           |
+|152        |Peter     |Hall     |      |80           |

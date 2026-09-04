@@ -1,0 +1,7 @@
+|employee_id|first_name|last_name|department_id|job_id|
+|-----------|----------|---------|-------------|------|
+|120        |Matthew   |Weiss    |50           |ST_MAN|
+|121        |Adam      |Fripp    |50           |ST_MAN|
+|122        |Payam     |Kaufling |50           |ST_MAN|
+|123        |Shanta    |Vollman  |50           |ST_MAN|
+|124        |Kevin     |Mourgos  |50           |ST_MAN|

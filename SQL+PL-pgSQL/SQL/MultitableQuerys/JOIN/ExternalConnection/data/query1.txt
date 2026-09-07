@@ -1,0 +1,5 @@
+|location_id|city     |department_name|
+|-----------|---------|---------------|
+|2 400      |London   |Human Resources|
+|2 500      |Oxford   |Sales          |
+|2 600      |Stretford|               |

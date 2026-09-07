@@ -1,0 +1,29 @@
+SELECT
+	l.location_id,
+	d.department_id
+FROM
+	locations l
+LEFT OUTER JOIN departments d
+    ON
+	(l.location_id = d.location_id)
+WHERE
+	d.department_id IS NULL;
+
+--|location_id|department_id|
+--|-----------|-------------|
+--|2 900      |             |
+--|1 600      |             |
+--|1 100      |             |
+--|2 300      |             |
+--|1 200      |             |
+--|1 000      |             |
+--|2 800      |             |
+--|2 000      |             |
+--|3 200      |             |
+--|2 200      |             |
+--|2 100      |             |
+--|2 600      |             |
+--|3 100      |             |
+--|3 000      |             |
+--|1 300      |             |
+--|1 900      |             |

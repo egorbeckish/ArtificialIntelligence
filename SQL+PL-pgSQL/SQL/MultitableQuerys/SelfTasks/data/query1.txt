@@ -1,0 +1,3 @@
+|department_name|location_id|
+|---------------|-----------|
+|Finance        |1 700      |

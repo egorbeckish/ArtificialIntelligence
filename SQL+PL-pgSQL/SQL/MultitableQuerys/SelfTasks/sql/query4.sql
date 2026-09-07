@@ -1,0 +1,81 @@
+SELECT
+	DISTINCT d.department_name,
+	p.product_name
+FROM
+	employees e,
+	departments d,
+	orders o,
+	order_items oi,
+	products p
+WHERE
+	d.department_id = e.department_id
+	AND e.employee_id = o.salesman_id
+	AND o.order_id = oi.order_id
+	AND p.product_id = oi.product_id;
+
+
+--|department_name|product_name                                                   |
+--|---------------|---------------------------------------------------------------|
+--|Sales          |HyperX Alloy Elite Cherry MX Red (HX-KB2RD1-RU/R1)             |
+--|Sales          |AMD Ryzen Threadripper 1920X (X399, TR4)                       |
+--|Sales          |ASUS GeForce RTX 3070 Dual OC 8GB (DUAL-RTX3070-O8G)           |
+--|Sales          |Gigabyte Z490 AORUS PRO AX LGA1200                             |
+--|Sales          |Acer 27" Nitro VG270UPbmiipx                                   |
+--|Sales          |Intel Core i7 10700K BOX Comet Lake LGA1200 (BX8070110700K)    |
+--|Sales          |Gigabyte B450M S2H mATX AM4                                    |
+--|Sales          |Asus X99-E-10G WS                                              |
+--|Sales          |G.Skill TridentZ RGB                                           |
+--|Sales          |Intel Core i7 9700F OEM Coffee Lake Refresh 1151v2             |
+--|Sales          |A4Tech Bloody B120 Black USB                                   |
+--|Sales          |Gigabyte GeForce RTX 3070 Eagle 8GB X3 (GV-N3070EAGLE-8GD)     |
+--|Sales          |Apple iPhone XS 64GB Space Gray (MT9E2RU/A)                    |
+--|Sales          |AMD 100-50606                                                  |
+--|Sales          |AMD Athlon 200GE BOX AM4 VEGA 3 APU Raven Ridge (YD200GC6FBBOX)|
+--|Sales          |Dell Inspiron 7567 Black (7567-8821)                           |
+--|Sales          |Apple MacBook Air 13 Early 2016                                |
+--|Sales          |Logitech G910 Orion Spectrum RGB (920-008019)                  |
+--|Sales          |ASUS 27" VG279QM TUF Gaming                                    |
+--|Sales          |HP ProBook 430 G4 (Y7Z47EA)                                    |
+--|Sales          |Razer DeathAdder Elite                                         |
+--|Sales          |AMD FX-Series FX-6300 OEM                                      |
+--|Sales          |Apple iPhone 7 256Gb                                           |
+--|Sales          |LG V30+ Black (H930DS)                                         |
+--|Sales          |MSI GP72 7RDX Leopard                                          |
+--|Sales          |A4tech X-710BK USB                                             |
+--|Sales          |Logitech G502 Proteus Spectrum Black USB                       |
+--|Sales          |Gigabyte B460M DS3H mATX LGA1200                               |
+--|Sales          |AOC 32" CQ32G1 Gaming                                          |
+--|Sales          |MSI GeForce RTX 2060 SUPER VENTUS GP OC 8GB                    |
+--|Sales          |Xiaomi Mi5 32GB                                                |
+--|Sales          |Lenovo IdeaPad Y700-15 (80NV0042RK)                            |
+--|Sales          |Samsung Galaxy S7 Edge 32Gb Black (SM-G935)                    |
+--|Sales          |Corsair K70 RGB MK.2 Cherry MX Red (CH-9109010-RU)             |
+--|Sales          |AMD RYZEN 9 5950X BOX AM4 Vermeer (100-100000059WOF)           |
+--|Sales          |Lenovo IdeaPad 720-15 (81C70002RK)                             |
+--|Sales          |Apple iPhone 8 Plus 256 GB                                     |
+--|Sales          |Intel Core i7 10700K OEM Comet Lake LGA1200 (CM8070104282436)  |
+--|Sales          |Gigabyte 27" Aorus AD27QD-EK                                   |
+--|Sales          |ASUS GeForce RTX 3080 TUF GAMING 10GB (TUF-RTX3080-10G-GAMING) |
+--|Sales          |ASUS ROG STRIX B550-E GAMING AM4                               |
+--|Sales          |ASUS VivoBook Pro 15 N580VD-DM194T                             |
+--|Sales          |Lenovo IdeaPad 510-15 (80SV0047RK)                             |
+--|Sales          |Intel Xeon E5-2699 V5 (OEM/Tray)                               |
+--|Sales          | Intel Core i5 10600KF OEM Comet Lake LGA1200 (CM8070104282136)|
+--|Sales          |Kingston HyperX Alloy FPS                                      |
+--|Sales          |Acer Predator Helios 300 PH317-51-7717                         |
+--|Sales          |Logitech G PRO Lightspeed HERO (910-005440)                    |
+
+
+SELECT
+	DISTINCT d.department_name,
+	p.product_name
+FROM
+	employees e
+JOIN departments d ON
+	d.department_id = e.department_id
+JOIN orders o ON
+	o.salesman_id = e.employee_id
+JOIN order_items oi ON
+	oi.order_id = o.order_id
+JOIN products p ON
+	p.product_id = oi.product_id;

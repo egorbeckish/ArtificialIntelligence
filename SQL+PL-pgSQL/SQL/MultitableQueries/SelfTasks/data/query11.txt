@@ -1,0 +1,21 @@
+|job_title                      |department_name |city   |sum    |
+|-------------------------------|----------------|-------|-------|
+|Human Resources Representative |Human Resources |London |6 500  |
+|Human Resources Representative |Human Resources |       |6 500  |
+|Human Resources Representative |                |       |6 500  |
+|Marketing Manager              |Marketing       |Toronto|13 000 |
+|Marketing Manager              |Marketing       |       |13 000 |
+|Marketing Manager              |                |       |13 000 |
+|Marketing Representative       |Marketing       |Toronto|6 000  |
+|Marketing Representative       |Marketing       |       |6 000  |
+|Marketing Representative       |                |       |6 000  |
+|Public Relations Representative|Public Relations|Munich |10 000 |
+|Public Relations Representative|Public Relations|       |10 000 |
+|Public Relations Representative|                |       |10 000 |
+|Sales Manager                  |Sales           |Oxford |61 000 |
+|Sales Manager                  |Sales           |       |61 000 |
+|Sales Manager                  |                |       |61 000 |
+|Sales Representative           |Sales           |Oxford |226 500|
+|Sales Representative           |Sales           |       |226 500|
+|Sales Representative           |                |       |226 500|
+|                               |                |       |323 000|

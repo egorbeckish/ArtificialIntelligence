@@ -1,6 +1,0 @@
-|city   |department_name |
-|-------|----------------|
-|Munich |Public Relations|
-|Toronto|Marketing       |
-|Roma   |                |
-|Bern   |                |

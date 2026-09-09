@@ -1,3 +1,0 @@
-|department_id|department_name|location_id|
-|-------------|---------------|-----------|
-|40           |Human Resources|2 400      |

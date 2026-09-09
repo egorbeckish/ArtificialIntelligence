@@ -1,6 +1,6 @@
 # Задачи для самостоятельного решения
 
-Запрос 1. [Вывести название отдела, которым руководит менеджер 108, и название города, в котором расположен отдел.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query1.sql)
+Запрос 1. [Вывести название отдела, которым руководит менеджер 108, и название города, в котором расположен отдел.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query1.sql)
 ```sql
 SELECT
 	d.department_name,
@@ -18,7 +18,7 @@ WHERE
 ```
 
 
-Запрос 2. [Вывести названия городов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 98199, и названия отделов, расположенных в этих городах. (вывести только те города, где есть отделы)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query2.sql)
+Запрос 2. [Вывести названия городов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 98199, и названия отделов, расположенных в этих городах. (вывести только те города, где есть отделы)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query2.sql)
 ```sql
 SELECT 
 	l.city,
@@ -41,7 +41,7 @@ WHERE
 ```
 
 
-Запрос 3. [Вывести названия городов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 98199, и названия отделов, расположенных в этих городах. (вывести все города с заданными почтовыми индексами)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query3.sql)
+Запрос 3. [Вывести названия городов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 98199, и названия отделов, расположенных в этих городах. (вывести все города с заданными почтовыми индексами)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query3.sql)
 ```sql
 FROM
 	departments d
@@ -61,7 +61,7 @@ WHERE
 ```
 
 
-Запрос 4. [Вывести названия отделов и названия товаров, которые продавали сотрудники этих отделов. (вывести только те отделы, сотрудники которых продавали товары)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query4.sql)
+Запрос 4. [Вывести названия отделов и названия товаров, которые продавали сотрудники этих отделов. (вывести только те отделы, сотрудники которых продавали товары)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query4.sql)
 ```sql
 SELECT
 	DISTINCT d.department_name,
@@ -89,7 +89,7 @@ WHERE
 ```
 
 
-Запрос 5. [Вывести названия отделов и названия товаров, которые продавали сотрудники этих отделов. (вывести все отделы)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query5.sql)
+Запрос 5. [Вывести названия отделов и названия товаров, которые продавали сотрудники этих отделов. (вывести все отделы)](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query5.sql)
 ```sql
 SELECT
 	DISTINCT d.department_name,
@@ -116,7 +116,7 @@ LEFT JOIN products p ON
 ```
 
 
-Запрос 6. [Вывести даты продаж и общую сумму продаж за каждую дату.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query6.sql)
+Запрос 6. [Вывести даты продаж и общую сумму продаж за каждую дату.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query6.sql)
 ```sql
 SELECT
 	o.order_date,
@@ -141,7 +141,7 @@ ORDER BY
 ```
 
 
-Запрос 7. [Вывести количество сотрудников и суммарную зарплату сотрудников, работающих в каждом городе. Должны быть выведены данные обо всех городах из таблицы Locations.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query7.sql)
+Запрос 7. [Вывести количество сотрудников и суммарную зарплату сотрудников, работающих в каждом городе. Должны быть выведены данные обо всех городах из таблицы Locations.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query7.sql)
 ```sql
 SELECT
 	l.city,
@@ -174,7 +174,7 @@ ORDER BY
 ```
 
 
-Запрос 8. [Вывести employee_id менеджеров 80-го отдела и суммарную зарплату сотрудников, находящихся в их непосредственном подчинении, за весь период работы.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query8.sql)
+Запрос 8. [Вывести employee_id менеджеров 80-го отдела и суммарную зарплату сотрудников, находящихся в их непосредственном подчинении, за весь период работы.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query8.sql)
 ```sql
 SELECT
 	e.manager_id,
@@ -224,7 +224,7 @@ ORDER BY
 ```
 
 
-Запрос 9. [Вывести данные о сотрудниках, у которых сумма продаж более чем в 50 раз больше зарплаты, которую они получают.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query9.sql)
+Запрос 9. [Вывести данные о сотрудниках, у которых сумма продаж более чем в 50 раз больше зарплаты, которую они получают.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query9.sql)
 ```sql
 SELECT
 	e.*
@@ -259,7 +259,7 @@ ORDER BY
 ```
 
 
-Запрос 10. [Для каждого отдела определите отношение суммы всех продаж, выполненных сотрудниками этого отдела, к суммарной заработной плате этого отдела.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query10.sql)
+Запрос 10. [Для каждого отдела определите отношение суммы всех продаж, выполненных сотрудниками этого отдела, к суммарной заработной плате этого отдела.](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query10.sql)
 ```sql
 SELECT
 	e.department_id,
@@ -280,7 +280,7 @@ GROUP BY
 ```
 
 
-Запрос 11. [Выведите данные о зарплате сотрудников с итоговыми строками, которые содержат суммарную зарплату по каждой должности, отделу и городу. Исключить данные о сотрудниках, которые работают в США (country_id ='US').](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfTasks/sql/query11.sql)
+Запрос 11. [Выведите данные о зарплате сотрудников с итоговыми строками, которые содержат суммарную зарплату по каждой должности, отделу и городу. Исключить данные о сотрудниках, которые работают в США (country_id ='US').](https://github.com/egorbeckish/ArtificialIntelligence/blob/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfTasks/sql/query11.sql)
 ```sql
 SELECT
 	j.job_title,

@@ -18,7 +18,7 @@
 
 Условия соединения могут быть заданы либо в предложении [***`WHERE`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/WHERE), либо в предложении ***`FROM`***.
 
-### [Условия соединения таблиц в предложении WHERE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQuerys/WHERE)
-### [Условия соединения таблиц в предложении FROM (JOIN)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQuerys/JOIN)
-### [Декартово произведение таблиц](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQuerys/CartesianProduct)
-### [Самосоединение таблицы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQuerys/SelfJoin)
+### [Условия соединения таблиц в предложении WHERE](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQueries/WHERE)
+### [Условия соединения таблиц в предложении FROM (JOIN)](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQueries/JOIN)
+### [Декартово произведение таблиц](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQueries/CartesianProduct)
+### [Самосоединение таблицы](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL%2BPL-pgSQL/SQL/MultitableQueries/SelfJoin)

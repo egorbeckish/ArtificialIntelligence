@@ -13,7 +13,7 @@ FROM {таблица 1} CROSS JOIN {таблица 2}
 
 ***`CROSS JOIN`*** следует применять в тех случаях, когда вы сознательно используете эту операцию.
 
-Запрос 1. [Для каждого сотрудника определить товары, которые он не продавал](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/CartesianProduct/sql/query1.sql)
+Запрос 1. [Для каждого сотрудника определить товары, которые он не продавал](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/CartesianProduct/sql/query1.sql)
 ```sql
 SELECT 
 	employee_id,

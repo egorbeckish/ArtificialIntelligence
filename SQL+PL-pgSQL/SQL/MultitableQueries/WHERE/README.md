@@ -7,7 +7,7 @@ WHERE
 Таблица1.столбец <операция соединения> Таблица2.столбец
 [AND Таблица3.столбец <операция соединения>, ...]
 ```
-Запрос 1. [Вывести номера и названия отделов, расположенных в городе London. ЗАПРОС СОДЕРЖИТ ОШИБКУ - отсутствует условие соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE/sql/query1.sql)
+Запрос 1. [Вывести номера и названия отделов, расположенных в городе London. ЗАПРОС СОДЕРЖИТ ОШИБКУ - отсутствует условие соединения](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE/sql/query1.sql)
 ```sql
 SELECT
 	department_id,
@@ -29,7 +29,7 @@ WHERE
 > [!WARNING]  
 > В этом запросе отсутствует условие соединения таблиц, поэтому будет выполнено декартово произведение таблиц. Каждая строка таблицы ***`Departments`*** соединится с каждой строкой таблицы ***`Locations`***. Формально это означает, что каждый отдел расположен во всех городах, поэтому при выполнении этого запроса будет выведен список всех отделов, и этот список не будет меняться при изменении названия города. Правильный запрос должен содержать условие соединения. Соединение этих таблиц осуществляется через столбец ***`location_id`***.
 
-Запрос 2. [Вывести номера и названия отделов, расположенных в городе London](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE/sql/query2.sql)
+Запрос 2. [Вывести номера и названия отделов, расположенных в городе London](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE/sql/query2.sql)
 ```sql
 SELECT
 	department_id,
@@ -49,7 +49,7 @@ WHERE
 > [!TIP]
 > В этом запросе, кроме добавления условия соединения, использованы псевдонимы таблиц. Так как столбец ***`location_id`*** есть в обеих таблицах, то необходимо использовать полное имя ***`loc.location_id`***, где ***`loc`*** - псевдоним таблицы ***`Locations`***.
 
-Запрос 3. [Вывести данные о товарах, которые приобретал покупатель 45](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE/sql/query3.sql)
+Запрос 3. [Вывести данные о товарах, которые приобретал покупатель 45](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE/sql/query3.sql)
 ```sql
 SELECT
 	ord.order_id,
@@ -89,7 +89,7 @@ ORDER BY
 
 Данный тип соединения можно определять для таблиц, между которыми нет связи на уровне определения данных. В качестве примеров использования такого типа соединения рассмотрим следующие задачи.
 
-Запрос 4. [Для каждого сотрудника определить номера и названия товаров, которые он имеет право продавать. Это право определяется следующим правилом: рейтинг сотрудника должен быть больше рейтинга товара или равен ему](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE/sql/query4.sql)
+Запрос 4. [Для каждого сотрудника определить номера и названия товаров, которые он имеет право продавать. Это право определяется следующим правилом: рейтинг сотрудника должен быть больше рейтинга товара или равен ему](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE/sql/query4.sql)
 ```sql
 SELECT
 	employee_id,
@@ -115,7 +115,7 @@ ORDER BY
 --|206        |44        |ASUS X540LA                                                    |5       |5       |
 ```
 
-Запрос 5. [Для сотрудника employee_id=108 определить должности, которые он имеет право занимать, получая текущую зарплату. Право занимать должность определяется следующим правилом: min_salary <= salary <= max_salary. Значения min_salary, max_salary содержатся в таблице Jobs](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE/sql/query5.sql)
+Запрос 5. [Для сотрудника employee_id=108 определить должности, которые он имеет право занимать, получая текущую зарплату. Право занимать должность определяется следующим правилом: min_salary <= salary <= max_salary. Значения min_salary, max_salary содержатся в таблице Jobs](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE/sql/query5.sql)
 ```sql
 SELECT
 	employee_id,

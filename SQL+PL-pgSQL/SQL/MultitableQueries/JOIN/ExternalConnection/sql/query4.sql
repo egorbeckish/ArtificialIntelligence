@@ -1,0 +1,27 @@
+SELECT
+	employee_id,
+	rating_e,
+	order_id,
+	order_date,
+	product_id,
+	quantity
+FROM
+	employees
+RIGHT JOIN orders ON
+	(employee_id = salesman_id)
+LEFT JOIN order_items
+		USING(order_id)
+WHERE
+	order_date BETWEEN '10.05.17' AND '31.05.17'
+ORDER BY
+	order_date;
+
+--|employee_id|rating_e|order_id|order_date|product_id|quantity|
+--|-----------|--------|--------|----------|----------|--------|
+--|           |        |41      |12-05-2017|          |        |
+--|153        |5       |34      |12-05-2017|15        |141     |
+--|155        |5       |44      |21-05-2017|          |        |
+--|145        |3       |3       |26-05-2017|          |        |
+--|151        |3       |21      |27-05-2017|          |        |
+--|           |        |20      |27-05-2017|26        |105     |
+--|           |        |19      |27-05-2017|38        |53      |

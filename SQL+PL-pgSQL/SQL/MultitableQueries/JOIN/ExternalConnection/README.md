@@ -17,7 +17,7 @@ FROM {таблица 1} LEFT [OUTER] JOIN {таблица 2} {условие с�
 
 Запрос будет выводить ***`все строки левой таблицы`*** и те строки правой таблицы, которые связаны со строками левой таблицы. Если строка левой таблицы не связана со строками правой таблицы, то столбцы правой таблицы для этой строки будут иметь значение ***`NULL`***.
 
-Запрос 1. [Вывести названия населенных пунктов, находящихся в стране country_id = 'UK', и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/ExternalConnection/sql/query1.sql)
+Запрос 1. [Вывести названия населенных пунктов, находящихся в стране country_id = 'UK', и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/ExternalConnection/sql/query1.sql)
 ```sql
 SELECT
 	l.location_id,
@@ -40,7 +40,7 @@ WHERE
 > [!IMPORTANT]
 > При использовании внутреннего соединения результат запроса не содержал бы данных о населенном пункте ***`Stretford`***, в котором нет отделов.
 
-Запрос 2. [Вывести данные обо всех населенных пунктах, в которых нет отделов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/ExternalConnection/sql/query2.sql)
+Запрос 2. [Вывести данные обо всех населенных пунктах, в которых нет отделов](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/ExternalConnection/sql/query2.sql)
 ```sql
 SELECT
 	l.location_id,
@@ -65,7 +65,7 @@ WHERE
 > [!TIP]
 > В этом запросе использовано следующее свойство внешнего соединения: если строка левой таблицы не связана со строками правой таблицы, то все столбцы правой таблицы будут иметь значение ***`NULL`***.
 
-Запрос 3. [Вывести названия населенных пунктов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 80925, и названия отделов, расположенных в этих городах, если они есть](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/ExternalConnection/sql/query3.sql)
+Запрос 3. [Вывести названия населенных пунктов, имеющих почтовые индексы 00989, 3095, M5V 2L7, 80925, и названия отделов, расположенных в этих городах, если они есть](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/ExternalConnection/sql/query3.sql)
 ```sql
 SELECT
 	city,
@@ -85,7 +85,7 @@ WHERE
 --|Bern   |                |
 ```
 > [!IMPORTANT]
-> Здесь используется конструкция ***`USING (location_id)`*** - она работает аналогично [***`ON`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection), но требует одноимённых столбцов в обеих таблицах. Также применяется фильтр по нескольким значениям через [***`IN`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN).
+> Здесь используется конструкция ***`USING (location_id)`*** - она работает аналогично [***`ON`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection), но требует одноимённых столбцов в обеих таблицах. Также применяется фильтр по нескольким значениям через [***`IN`***](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/OperatorsStructure/IN).
 
 ---
 ### ***Правое внешнее соединение (RIGHT JOIN)***
@@ -103,7 +103,7 @@ FROM {таблица 1} RIGHT [OUTER] JOIN {таблица 2} {условие с
 
 В используемой базе данных таблицы ***`Employees`*** и ***`Order_Items`*** находятся по обе стороны таблицы Orders. Для решения этой задачи необходимо использовать левое и правое соединения.
 
-Запрос 4. [Необходимо вывести данные о заказах, которые были оформлены в период с 10.05.17 по 31.05.17. Данные должны содержать информацию о сотруднике, который оформил заказ, его рейтинге и о содержимом заказа](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/ExternalConnection/sql/query4.sql)
+Запрос 4. [Необходимо вывести данные о заказах, которые были оформлены в период с 10.05.17 по 31.05.17. Данные должны содержать информацию о сотруднике, который оформил заказ, его рейтинге и о содержимом заказа](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/ExternalConnection/sql/query4.sql)
 ```sql
 SELECT
 	employee_id,

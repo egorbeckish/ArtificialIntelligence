@@ -11,7 +11,7 @@ FROM {таблица 1} NATURAL JOIN {таблица 2}
 ```
 Этот оператор соответствует операции соединения реляционной алгебры. При использовании этого оператора необходимо, чтобы соединяемые таблицы имели один или несколько одноимённых столбцов. Строки левой таблицы соединяются с теми строками правой таблицы, которые имеют совпадающие значения всех одноимённых столбцов.
 
-Запрос 1. [Вывести названия населенных пунктов, номера и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query1.sql)
+Запрос 1. [Вывести названия населенных пунктов, номера и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query1.sql)
 ```sql
 SELECT
 	location_id,
@@ -54,7 +54,7 @@ FROM {таблица 1} JOIN {таблица 2} ON ({таблица 1.имя с�
 
 Конструкция ***`USING`*** позволяет осуществлять соединение по нескольким столбцам - в этом случае в качестве параметра задается список столбцов. Строки левой таблицы соединяются с теми строками правой таблицы, которые имеют совпадающие значения всех столбцов из этого списка.
 
-Запрос 2. [Вывести названия населенных пунктов, номера и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query2.sql)
+Запрос 2. [Вывести названия населенных пунктов, номера и названия отделов, которые в них расположены](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query2.sql)
 ```sql
 SELECT
 	location_id,
@@ -79,7 +79,7 @@ JOIN departments
 - осуществлять соединение по столбцам, имеющим разные имена в левой и правой таблице;
 - осуществлять соединение по неэквивалентности.
 
-Запрос 3. [Вывести данные о заказах, которые оформил сотрудник 165](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query3.sql)
+Запрос 3. [Вывести данные о заказах, которые оформил сотрудник 165](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query3.sql)
 ```sql
 SELECT
 	employee_id,
@@ -97,9 +97,9 @@ WHERE
 --|-----------|--------|-----------|----------|
 --|165        |66      |36         |23-01-2020|
 ```
-В запросе 4 приведено решение задачи из [запроса 4](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/WHERE), которое требует соединение по неэквивалентности, с использованием конструкции ***`JOIN ON`***.
+В запросе 4 приведено решение задачи из [запроса 4](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/WHERE), которое требует соединение по неэквивалентности, с использованием конструкции ***`JOIN ON`***.
 
-Запрос 4. [Для каждого сотрудника определить номера и названия товаров, которые он имеет право продавать](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query4.sql)
+Запрос 4. [Для каждого сотрудника определить номера и названия товаров, которые он имеет право продавать](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query4.sql)
 ```sql
 SELECT
 	employee_id,
@@ -126,7 +126,7 @@ ORDER BY
 > [!IMPORTANT]
 > Строки, полученные в результате выполнения запроса, можно группировать по значениям вычисляемых столбцов.
 
-Запрос 5. [Вывести общую сумму продаж за каждый месяц 2017 года](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query5.sql)
+Запрос 5. [Вывести общую сумму продаж за каждый месяц 2017 года](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query5.sql)
 ```sql
 SELECT
 	TO_CHAR(order_date, 'MM') AS Mon,
@@ -163,7 +163,7 @@ FROM {таблица 1} JOIN {таблица 2} {условие соединен
                  JOIN {таблица N} {условие соединения N-1}
 ```
 
-Запрос 6. [Для сотрудников из отдела 80 определить общую сумму продаж](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query6.sql)
+Запрос 6. [Для сотрудников из отдела 80 определить общую сумму продаж](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query6.sql)
 ```sql
 SELECT
 	employee_id,
@@ -195,7 +195,7 @@ GROUP BY
 --|166        |Sundar     |Ande      |SA_REP|248 020  |
 ```
 
-Запрос 7. [Определить общую сумму покупок клиентов, вывести результаты в порядке убывания общей суммы покупок](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query7.sql)
+Запрос 7. [Определить общую сумму покупок клиентов, вывести результаты в порядке убывания общей суммы покупок](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query7.sql)
 ```sql
 SELECT
 	customer_id,
@@ -223,7 +223,7 @@ ORDER BY
 ```
 В одном запросе можно использовать разные способы соединения таблиц. Запрос 8 содержит другой вариант решения задачи из запроса 6, в котором одновременно используются и ***`ON`***, и ***`USING`***.
 
-Запрос 8. [Для сотрудников из отдела 80 определить общую сумму продаж](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/JOIN/InternalConnection/sql/query8.sql)
+Запрос 8. [Для сотрудников из отдела 80 определить общую сумму продаж](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/JOIN/InternalConnection/sql/query8.sql)
 ```sql
 SELECT
 	employee_id,

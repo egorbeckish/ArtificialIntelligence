@@ -13,7 +13,7 @@ Emp1.employee_id <> Emp2.employee_id
 
 Эту задачу можно решить без использования копий таблицы. Для этого в предложении FROM нужно определить два псевдонима таблицы и использовать эти псевдонимы при определении условий соединения.
 
-Запрос 1. [Вывести данные об однофамильцах](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfJoin/sql/query1.sql)
+Запрос 1. [Вывести данные об однофамильцах](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfJoin/sql/query1.sql)
 ```sql
 SELECT
 	emp1.employee_id,
@@ -44,7 +44,7 @@ ORDER BY
 
 В таблице Employees столбец ***`manager_id`*** содержит значение ***`employee_id`*** сотрудника, являющегося начальником данного сотрудника.
 
-Запрос 2. [Вывести имена сотрудников, являющихся начальниками в отделе 80, и имена сотрудников, которые находятся в их непосредственном подчинении](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQuerys/SelfJoin/sql/query2.sql)
+Запрос 2. [Вывести имена сотрудников, являющихся начальниками в отделе 80, и имена сотрудников, которые находятся в их непосредственном подчинении](https://github.com/egorbeckish/ArtificialIntelligence/tree/main/SQL+PL-pgSQL/SQL/MultitableQueries/SelfJoin/sql/query2.sql)
 ```sql
 SELECT
 	emp1.employee_id AS Boss,
